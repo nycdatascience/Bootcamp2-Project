@@ -1,0 +1,305 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+
+<html>
+
+	<head>
+		<title>RGGI CO2 Allowance Tracking System</title>
+
+		
+		<script language="JavaScript1.2" src="/eats/rggi/library/js/indexV2.js"></script>
+
+		
+		
+
+		
+		<link rel="stylesheet" type="text/css" href="/eats/rggi/layout//eats.css" />
+		<link rel="stylesheet" type="text/css" href="/eats/rggi/layout//eatsTab.css" />
+
+	    <link href="/eats/rggi/favicon.ico" rel="shortcut icon" />
+
+		
+		
+	
+			<style type="text/css">
+				@import url(layout/eatsFilter.css);
+			</style>
+		
+				<style type="text/css">
+					@import url(layout/eatsDatagridV2.css);
+				</style>
+				<!--[if IE]>
+				    <style type="text/css">
+				    @import url(layout/eatsDatagridV2.ie.css);
+				    </style>
+				<![endif]-->
+			</head>
+
+	<body onLoad="isLoaded=true; initFilter('filter1', 'reportsv2.owners_rpt', '/eats/rggi' , 'rggi-coats.org', 'true' ); sizeGrid('grid_1','250','100%'); " onUnload="isLoaded=false; ">
+
+
+	<link rel="stylesheet" type="text/css" href="/eats/rggi/layout/eats_rggi.css" />
+
+
+
+<div id="header">
+<div id="usernav">
+	
+	  
+			<div id="loginlist" >
+				<ul id="" class=" Wdp100"><li class=" emptymenu">&nbsp;</li></ul>	
+			</div>
+			
+        <BR />
+	 
+</div>
+
+
+
+        <div id="pagetitle"><span style="font-variant:small-caps">RGGI CO<small><sub>2</sub></small> Allowance Tracking System</span></div>
+		<div id="bannergraphic">
+        
+        RGGI CO<sub><small>2</small></sub> Budget Trading Programs
+        
+        </div>
+    </div>
+  <ul id="iepubnav" class="menuList">
+<li onFocus="if(this.blur)this.blur()" class="first menuList"><span class="menuspacer" id="iepubnav1" ><a href="index.cfm?fuseaction=home.help&clearfuseattribs=true" id="link900" target="" onclick=" setCookie('EXPMENU', 900, 0, '/eats/rggi/','rggi-coats.org','true');" title="Reference" onFocus="if(this.blur)this.blur()">Reference</a>
+<ul class="submenu menuList">
+<li onFocus="if(this.blur)this.blur()" class="menuList" id="iepubnav2" ><span class="menuspacer"  id="iepubnav3" ><a href="index.cfm?fuseaction=home.glossary&clearfuseattribs=true" id="link1000" target="" onclick=" setCookie('EXPMENU', 1000, 0, '/eats/rggi/','rggi-coats.org','true');" title="Glossary" onFocus="if(this.blur)this.blur()">Glossary</a></span></li>
+<li onFocus="if(this.blur)this.blur()" class="menuList" id="iepubnav4" ><span class="menuspacer"  id="iepubnav5" ><a href="index.cfm?fuseaction=home.getstarted&clearfuseattribs=true" id="link1100" target="_new" onclick=" setCookie('EXPMENU', 1100, 0, '/eats/rggi/','rggi-coats.org','true');" title="User's Guide" onFocus="if(this.blur)this.blur()">User's Guide</a></span></li>
+<li onFocus="if(this.blur)this.blur()" class="menuList" id="iepubnav6" ><span class="menuspacer"  id="iepubnav7" ><a href="index.cfm?fuseaction=home.faq&clearfuseattribs=true" id="link1200" target="_new" onclick=" setCookie('EXPMENU', 1200, 0, '/eats/rggi/','rggi-coats.org','true');" title="Frequently Asked Questions" onFocus="if(this.blur)this.blur()">Frequently Asked Questions</a></span></li>
+</ul>
+</span></li>
+<li onFocus="if(this.blur)this.blur()" class="last menuList"><span class="menuspacer" id="iepubnav8" ><img src="image/layout/_rggi/whiteverticalbar.gif" class="menuleadingbullet" border="0" /> <a href="index.cfm?fuseaction=home.home&clearfuseattribs=true" id="link1300" target="" onclick=" setCookie('EXPMENU', 1300, 0, '/eats/rggi/','rggi-coats.org','true');" title="Home" onFocus="if(this.blur)this.blur()">Home</a></span></li></ul>
+
+    
+    <div id="content">
+	    <table width="100%" border="0" cellspacing="0" cellpadding="2">
+			<tr>
+				<td class="fuse">
+					<h1 class="circuit">
+						Owner-Operator Report 
+					</h1>
+				</td>
+				<td valign="top" align="right">&nbsp;
+					<nobr><a onmouseout="if(checkLoad()){buttonTextLo(this);};" class="buttonTextLo" onclick="if(checkLoad()){isLoaded=false;};" onmouseover="if(checkLoad()){buttonTextHi(this);};" title="Download as PDF" id="exportPDFButton" href="index.cfm?fuseaction=search.sql_report&returnfuseaction=reportsv2.owners_rpt&reportformat=pdf&hc=ISkwICAK&nc=395689B9EF4CA021FC067F1ECBE1CF0B">Download as PDF</a></nobr> <nobr><a onclick="if(checkLoad()){isLoaded=false;};" class="buttonTextLo" href="index.cfm?fuseaction=search.sql_report&returnfuseaction=reportsv2.owners_rpt&reportformat=excel&hc=ISkwICAK&nc=17B870D295161F268842BDAE78B9833D" id="exportXLSButton" onmouseout="if(checkLoad()){buttonTextLo(this);};" onmouseover="if(checkLoad()){buttonTextHi(this);};" title="Download as Excel">Download as Excel</a></nobr> 
+				</td>
+			</tr>
+	 	</table> <table width="100%"  border="0" cellspacing="0" cellpadding="2" class="circuit">
+			<tr>
+				<td align="left" valign="top" width="40%">
+					<table border="0" cellspacing="0" cellpadding="2">
+							<tr>
+								<td>
+									<p>The Owner-Operator Report may be downloaded as a PDF file or an Excel file. Use the buttons at the top right of the screen to export the report data in either file format.</p>
+
+<p>Use the filter criteria to the right to display a specific owner-operator or list of owner-operators more easily. Also, note that the grid can be sorted by clicking on the grid column headers (first click is ascending, second click is descending).</p>&nbsp;
+								</td>
+							</tr>
+						</table>
+					</td>
+					<td align="right" width="1%" valign="top">&nbsp;</td>
+					<td align="right" valign="top" >
+						<table border="0" cellspacing="0" cellpadding="0" class="filterTable">
+							
+								<thead class="fixedHeader">
+									<tr>
+										<th class="fuse" align="left">
+											<a onclick="toggleFilter('filter1', 'reportsv2.owners_rpt', '/eats/rggi' , 'rggi-coats.org', 'true'); return false;" href="javascript:void(0);" title="Filter Criteria" class="filterHeader">Filter Criteria <span id="expandFilterIcon">▼</span></a> 
+										</th>
+									</tr>
+								</thead>
+							
+							<tr>
+								<td>
+									
+											<div id="filter1" class="filterDiv" >
+												<table border="0" cellspacing="2" cellpadding="2" class="filterBorder" id="filter1Table">
+													<tr>
+														<td>
+															
+	<table border="0" cellspacing="0" cellpadding="3" class="circuit">
+	<form name="filterForm" action="index.cfm?hc=ISkwICAK" method="post">
+		<input type="hidden" name="fuseaction" value="reportsv2.owners_rpt">
+		<input type="hidden" name="expandFilter" value="1">
+		<input type="hidden" name="setFilter" value="true">
+        		
+        
+       
+         <tr>
+				<th class="fuse" align="right"> <label for="SRC_NAME">Facility Name</label></th>
+				<td class="fuse" align="left" valign="top"> <input type="text" name="SRC_NAME" value="" size=""
+					        
+					        maxlength="400" class="fuse" id="SRC_NAME"
+					        lang_id="1" id="SRC_NAME" order="1" html="false" label="Facility Name"> </td>
+
+                  
+
+			</tr>   
+         
+       
+         <tr>
+				<th class="fuse" align="right"> <label for="SRC_NUMBER">ORIS Code</label></th>
+				<td class="fuse" align="left" valign="top"> <input type="text" name="SRC_NUMBER" value="" size=""
+					        
+					        maxlength="50" class="fuse" id="SRC_NUMBER"
+					        html="false" order="2" id="SRC_NUMBER" lang_id="1" label="ORIS Code"> </td>
+
+                  
+
+			</tr>   
+         
+       
+         <tr>
+				<th class="fuse" align="right"> <label for="PROG_ID">State</label></th>
+				<td class="fuse" align="left" valign="top"> <select name="PROG_ID" size="1" class="fuse" id="PROG_ID" id="PROG_ID" order="3" lang_id="1" label="State">
+				<option value="0" class="fuse" > </option> <option value="1" class="fuse" > All States</option> <option value="4" class="fuse" > CT</option> <option value="5" class="fuse" > DE</option> <option value="8" class="fuse" > MA</option> <option value="7" class="fuse" > MD</option> <option value="6" class="fuse" > ME</option> <option value="9" class="fuse" > NH</option> <option value="2" class="fuse" > NY</option> <option value="11" class="fuse" > RI</option> <option value="12" class="fuse" selected> VT</option> </select> </td>
+
+                  
+
+			</tr>   
+         
+       
+         <tr>
+				<th class="fuse" align="right"> <label for="ENTERPRISE_NAME">Owner/Operator</label></th>
+				<td class="fuse" align="left" valign="top"> <input type="text" name="ENTERPRISE_NAME" value="" size=""
+					        
+					        maxlength="120" class="fuse" id="ENTERPRISE_NAME"
+					        order="4" id="ENTERPRISE_NAME" html="false" label="Owner/Operator" lang_id="1"> </td>
+
+                  
+
+			</tr>   
+         
+       
+         <tr>
+				<th class="fuse" align="right"> <label for="ALT_SRC_NUMBER">State ID</label></th>
+				<td class="fuse" align="left" valign="top"> <input type="text" name="ALT_SRC_NUMBER" value="" size=""
+					        
+					        maxlength="50" class="fuse" id="ALT_SRC_NUMBER"
+					        html="false" label="State ID" lang_id="1" order="9" id="ALT_SRC_NUMBER"> </td>
+
+                  
+
+			</tr>   
+                 
+         
+		</form>
+		</table>
+
+														</td>
+													</tr>
+													<tr>
+														<td class="fuse" align="left">
+															<nobr><a order="32" onclick="document.filterForm.submit();return false;" href="javascript:void(0);" name="button_filter" onmouseover="buttonTextHi(this);" class="buttonTextLo" onmouseout="buttonTextLo(this);" lang_id="1" title="Filter" id="BUTTON_FILTER">Filter</a></nobr> <nobr><a onclick="if(checkLoad()){isLoaded=false;};" onmouseover="if(checkLoad()){buttonTextHi(this);};" class="buttonTextLo" id="BUTTON_CLEAR" title="Clear" name="button_clear" href="index.cfm?fuseaction=reportsV2.owners_rpt&setFilter=true&hc=ISkwICAK&nc=EEDA4ED9FF13493F7349C58D96285B93" order="30" onmouseout="if(checkLoad()){buttonTextLo(this);};" lang_id="1">Clear</a></nobr> 
+														</td>
+													</tr>
+												</table>
+											</div>
+										
+										&nbsp;
+										</td>
+									</tr>
+								</table>
+							
+						</td>
+					</tr>
+			</table>
+			<br/> 
+		<table width="100%" border="0" cellspacing="0" cellpadding="0" class="circuit">
+		
+		<tr><td colspan="2">
+			<div class="dataTableContainer" id="grid_1"><table width="100%" cellspacing="0" cellpadding="2" class="dataTable" id="grid_1_table">
+
+		<thead class="dataTableHeader" id="grid_1_thead"><tr>
+		
+				<th align="CENTER"><a onclick="if(checkLoad()){isLoaded=false;};" href="index.cfm?fuseaction=reportsv2.owners_rpt&page=1&sortorder=LDEoNixOLSs+PCIpM0IqST0K&hc=ISkwICAK&nc=51F37C20BBBE7AF4A2EA16C5E90B2529" class="sortheader" title="Facility Name">Facility Name</a></th>
+			
+				<th ><a onclick="if(checkLoad()){isLoaded=false;};" title="Account Name" href="index.cfm?fuseaction=reportsv2.owners_rpt&page=1&sortorder=LTVJMixMXC8xPyJIVlo7QS1bUCAgCg==&hc=ISkwICAK&nc=6B2CAB5A6CA2A954098F8F1C34E56B6D" class="sortheader">Account Name</a></th>
+			
+				<th width="100" align="CENTER"><a class="sortheader" onclick="if(checkLoad()){isLoaded=false;};" title="ORIS Code" href="index.cfm?fuseaction=reportsv2.owners_rpt&page=1&sortorder=LjEoNixOLSsqPCI0VkZdRT9fWyQgCg==&hc=ISkwICAK&nc=408D63F968C798466D6DD0050A6B5D90">ORIS Code</a></th>
+			
+				<th align="CENTER"><a href="index.cfm?fuseaction=reportsv2.owners_rpt&page=1&sortorder=KTBJRiZMXF5fPyMwUAo=&hc=ISkwICAK&nc=C8BF1D4EC5B70C75BA36120BF1E9C780" class="sortheader" title="Unit ID" onclick="if(checkLoad()){isLoaded=false;};">Unit ID</a></th>
+			
+				<th ><a title="Owner/Operator" class="sortheader" onclick="if(checkLoad()){isLoaded=false;};" href="index.cfm?fuseaction=reportsv2.owners_rpt&page=1&sortorder=MzRJRjtITFsvO1JYQEMqOTBbO15LWzcuXC4gICAK&hc=ISkwICAK&nc=A7B210F281AC6F6A05A14AEC9F52E8F3">Owner&#x2f;Operator</a></th>
+			
+				<th width="100" align="CENTER"><a href="index.cfm?fuseaction=reportsv2.owners_rpt&page=1&sortorder=MjVJTjtOLF8tP0NAXUcrMTxaOiMuQyYmTAo=&hc=ISkwICAK&nc=CF400422B7AAD287D5468811F46DFD2E" title="State ID" class="sortheader" onclick="if(checkLoad()){isLoaded=false;};">State ID</a></th>
+			
+				<th align="CENTER"><a title="State" class="sortheader" href="index.cfm?fuseaction=reportsv2.owners_rpt&page=1&sortorder=KzFYNiBILFs+PCQ8UkZLSCAK&hc=ISkwICAK&nc=3587C6FD1BF18FE8C9A688C5700E97EE" onclick="if(checkLoad()){isLoaded=false;};">State</a></th>
+			
+		</tr></thead>
+		
+
+		
+		<tbody class="dataTableBody" id="grid_1_tbody">
+		
+				<tr valign="baseline">
+			
+					<td align="LEFT" >Berlin 5&nbsp;</td>
+				
+					<td >Berlin 5 Compliance Account&nbsp;</td>
+				
+					<td align="LEFT" >3734&nbsp;</td>
+				
+					<td >A, B&nbsp;</td>
+				
+					<td >Green Mountain Power Corporation &#x28;Owner-Operator&#x29;&nbsp;</td>
+				
+					<td align="LEFT" >&nbsp;</td>
+				
+					<td align="LEFT" >VT&nbsp;</td>
+				
+			</tr>
+			
+				<tr valign="baseline">
+			
+					<td align="LEFT" >Penny Lane Gas Turbine &nbsp;</td>
+				
+					<td >Penny Lane Gas Turbine  Compliance Account&nbsp;</td>
+				
+					<td align="LEFT" >3754&nbsp;</td>
+				
+					<td >CT1, CT2&nbsp;</td>
+				
+					<td >Burlington Electric Department &#x28;Owner-Operator&#x29;&nbsp;</td>
+				
+					<td align="LEFT" >&nbsp;</td>
+				
+					<td align="LEFT" >VT&nbsp;</td>
+				
+			</tr>
+			
+		</tbody>
+		
+		</table></div></td></tr>
+
+		
+			<tr>
+				<td class="fuse" align="left"><span class="fuse"><b>
+        1 - 2 of 2 
+        </b></span>&nbsp;</td>
+				<td class="fuse" align="right">&nbsp; </td>
+			</tr>
+			
+		</table>
+	<br  />
+
+	    
+    </div>
+    <br clear="All" />
+    
+  
+    <br clear="All" />
+    <div id="footer">
+     <img src="image/layout/_rggi/rggi-logo-new.gif"> 
+     <br />
+     RGGI Inc. is a nonprofit corporation created to provide technical and administrative services to the Regional Greenhouse Gas Initiative CO<sub>2</sub> budget trading programs of Connecticut, Delaware, Maine, Maryland, Massachusetts, New Hampshire, New York, Rhode Island and Vermont.
+    </div>
+    
+
+<br  />
+
+
+</body>
+</html> 

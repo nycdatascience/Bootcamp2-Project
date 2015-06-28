@@ -1,0 +1,3455 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+
+<html>
+
+	<head>
+		<title>RGGI CO2 Allowance Tracking System</title>
+
+		
+		<script language="JavaScript1.2" src="/eats/rggi/library/js/indexV2.js"></script>
+
+		
+		
+
+		
+		<link rel="stylesheet" type="text/css" href="/eats/rggi/layout//eats.css" />
+		<link rel="stylesheet" type="text/css" href="/eats/rggi/layout//eatsTab.css" />
+
+	    <link href="/eats/rggi/favicon.ico" rel="shortcut icon" />
+
+		
+		
+	
+		<script language="Javascript1.2">
+			function dspPrint() {
+				printerfriendly=window.open('','printerfriendly');
+				printerfriendly.document.write('<html><body>');
+				printerfriendly.document.write('<form name="printForm" action="index.cfm" method="post" target="_self">"><input type="hidden" name="fuseaction" value="reportsV2.quarterly_emissions_rpt_output"><input type="hidden" name="isprinterfriendly" value="true"><input type="hidden" name="reporttype" value="F"><input type="hidden" name="FILTER_BEGINNING_YEAR" value="2009"><input type="hidden" name="FILTER_ENDING_YEAR" value="2015"><input type="hidden" name="FILTER_BEGINNING_QUARTER" value="1"><input type="hidden" name="FILTER_ENDING_QUARTER" value="4"><input type="hidden" name="SRC_NUMBER" value=""><input type="hidden" name="SRC_ID" value="TSlOP19UOlZTIyU9I19cTFJHPCs&#x2b;XlAnIzJPWylULSc1M0xENl9KVl8jSlc&#x2f;U1xQU1EgW1xeJFhVU10&#x2f;LgpNVSBDK1FAWkpSIFwqU0U&#x2f;NFpKRjMjIFssUVo7VzM6W1hKRVQhOi9fTVQsRSsiL18tXiheV0ssNT0hTFBfCk03TE05I0xWMyNYRylSRjMxK0A8KSFOVzVbTlM&#x2f;JiRCN1U&#x2b;PzVbL0ciVydXSlRPRzMrX1MuWC9RPlNPR18KTSpNX0VRPC8pXyhLMydAOyJbX10xN108NEBOXytLPDNOVjI&#x2f;M1dHVC0gTSo&#x2f;UyxfRlBOXzJXXFtfUFw3PgpNX00ySTVeLzBCL0ZKUjw4NzpNXCJbOldBU0FXKyUsQDspPT9fMiZTMlBAKyxKKk9XIz47WVJPPyJbOk5LCk1XLCtaVUVNSCIvTVJQRC8tSj0vNyJAVEIjVURRUi4zWCstSypTKCpPRDw&#x2f;O19cKk4qXCszUl0yQ1JNO1UKTVlMXzdaKlA3UiJbLlk8NzUqRVdcXjxdNltcVC9UQlEyVURbN14kPD9RQT9dXl0vUFldOyhUQCQ6UiBcPgpNUCEnNlpKTEkzWUNCUlg0S0kgUzJQTkwlMTxXMlIgRU8hJDYzU19cK1M8XyUlXF8nID9ANSIgTytSITMyCk1ZLTMmXik7MV9EXT83Xls7VT48JyEvXypVX0cnJ1InVlsgM1tQXTciVV43IzFNTDEwTkdDUlBDQFlFMkwKTVhCRSc3PkwsQ0xTIV4gPy4hTCpTNUw7LkdcMlBYREU2USxbN1IgNC1BTE9fN1hbLlAgLDBFTF03KV5bQQpNX0pPP1EvWisjXC1fJ1hJMlosREtdJD0ySzxXIlZaMzsqQT5OSFAsV0FfW0lQVyc6UiBUKFoxWyNKXE9eCk0gJzAzWyBPIyhdOylfL189NyJQV1JcN0VTPSMwW0BbOV9dI1VfXTwgUU9YNUcuSzQnLjtQWyArKlpMRzUKTSVfWyJSIEgzUyxUOFVQOjtTTU8nV10hKldcRy8yTD81XkxLXSJNID8wRlsjWU4&#x2f;Q1VaOzcrPzJVUkBfRgpNS1xNM1UvXCxXVEEzKywsN1ZVXCpCLEU8VjQnMldNVE4zPks&#x2f;MkBcLV9MPScmR0xLJlI8OlFAW05VTFpRCk0yJ0UqX1wjOFldOy4gUD81Jy0&#x2f;I1hQQCBTPD8qJV4&#x2f;O19CXD5bXEspUVwrSiEyVzpRP10vUExdKTdBMk4KTVVGJFUgRVwiUSwwNTNHW15XXFIyUF9eLlsuS18gX1NaNzwmOSFCRzpTLEgxQ04vT1ddKDVfXVRPUTFVVQpNIF5LOCBMPz5bTDsuUy1TO1tMPC5TIFs&#x2f;XkovKChcUz9BOD0jI1wrI1MgPy9fUl8nVVxVLjM8SzZQQlc9Ck1SIEtCQ1w8IjcqXFZSSjtOVT9PU1NNPCVVOlBWX09fLyUsLDNXTkcvUExIO1NYWyJRUjAlKSxcIkE6RzAKTVYsXE5RRkhTM1gsL1k8LzBXLE88M11AI1ZCVygpLDc&#x2b;Xi1cKkFfLFJfPCs2WiVfVSNOO09bT1crUiJcLwpNUywrQFBPUyxbKlQjSEArPjRYICZbPDxPXl5HNks8XDQ7Xl8&#x2f;UEhbPVJMPzVQXFIiITBfU1MgPShQRTg7Ck0iLFwoJyE7O1c8MjhRTiAzVV1dKCs9Tz9DTk0pK1BbOlMgUk9VMj5VMipcLUtMR0MhTV00Vy9cNSFKTCcKTVosIlMhTVc&#x2f;RzxPUENcUzchUDAyU1xNIkctWlU1IFddUlVeVyMgXy9WQE06U0E7LlM&#x2b;QzZeXC9MVDBHMQpNUEBfO0hRIz9TXlIlUixbQyM&#x2b;Xz4gLDBbQE9SSVFQSz8xQFVbU0EvUlcvW0gkRD07QF1cPSIvSDJZXE0&#x2f;Ck0gVEkyU1xPIyMoVUdXPEQqNlw1NyJNOyYxPSJQWFgrRlFOODkrPkw6UkxLU1NaVE8rPEdDU11PTyAsUyEKTStMKkxYUF8zUE1fIlQ8RiUrTFQuVzxAN0tcWy5eRUsyUEFLOVFQPD5VXUsjPixfMUNcXy1UIE8nXyE6TwpNUzY&#x2f;U0tdP1lLPCdbM0FTN1UxSzJXQEQ&#x2b;MFhfUyNAUyVeRDMrWi1bXidHRzZfRTs8VVRMM1ciL0hXWSoxCk0nJFI&#x2b;QipbM0osVydaQSAqW01NXldeJyhDTD8pUj00IEJMXkpZLzdAX1g8JlNPOSMjJEQkPjxTVSE&#x2b;RCQKTVBUMzJVPFcuUlA&#x2b;PlFOWyIiXFdDU14tTCFYUzpTXEUrVi9FM1BOXEIjMCczM0xLX1VFPTcyLCstK0pbVQorUiQ7TSJMX1M&#x2b;TTwpMz9cIAo&#x3d;&#xa;"><input type="hidden" name="REGION_ID" value="0"><input type="hidden" name="SRC_NAME" value=""></form>');
+				printerfriendly.document.write('</body></html>');
+				printerfriendly.document.close();
+				printerfriendly.document.printForm.submit();
+				printerfriendly.focus();
+			}
+			
+		</script>
+	
+		<script language="Javascript1.2">
+			function dspHelp() {
+				
+					dspHelpWin=window.open('index.cfm?fuseaction=home.help&mc_id=82&obj_id=654&isiframe=true'+helpAnchor,'Help','toolbar=no,height=450,width=760,resizable=yes,scrollbars=yes');
+					dspHelpWin.focus();
+				
+			}
+
+			
+		</script>
+	
+				<style type="text/css">
+					@import url(layout/eatsDatagridV2.css);
+				</style>
+				<!--[if IE]>
+				    <style type="text/css">
+				    @import url(layout/eatsDatagridV2.ie.css);
+				    </style>
+				<![endif]-->
+			</head>
+
+	<body onLoad="isLoaded=true; sizeGrid('grid_1','250','100%'); " onUnload="isLoaded=false; ">
+
+
+	<link rel="stylesheet" type="text/css" href="/eats/rggi/layout/eats_rggi.css" />
+
+
+
+<div id="header">
+<div id="usernav">
+	
+	  
+			<div id="loginlist" >
+				<ul id="" class=" Wdp100"><li class=" emptymenu">&nbsp;</li></ul>	
+			</div>
+			
+        <BR />
+	 
+</div>
+
+
+
+        <div id="pagetitle"><span style="font-variant:small-caps">RGGI CO<small><sub>2</sub></small> Allowance Tracking System</span></div>
+		<div id="bannergraphic">
+        
+        RGGI CO<sub><small>2</small></sub> Budget Trading Programs
+        
+        </div>
+    </div>
+  <ul id="iepubnav" class="menuList">
+<li onFocus="if(this.blur)this.blur()" class="first menuList"><span class="menuspacer" id="iepubnav1" ><a href="index.cfm?fuseaction=home.help&clearfuseattribs=true" id="link900" target="" onclick=" setCookie('EXPMENU', 900, 0, '/eats/rggi/','rggi-coats.org','true');" title="Reference" onFocus="if(this.blur)this.blur()">Reference</a>
+<ul class="submenu menuList">
+<li onFocus="if(this.blur)this.blur()" class="menuList" id="iepubnav2" ><span class="menuspacer"  id="iepubnav3" ><a href="index.cfm?fuseaction=home.glossary&clearfuseattribs=true" id="link1000" target="" onclick=" setCookie('EXPMENU', 1000, 0, '/eats/rggi/','rggi-coats.org','true');" title="Glossary" onFocus="if(this.blur)this.blur()">Glossary</a></span></li>
+<li onFocus="if(this.blur)this.blur()" class="menuList" id="iepubnav4" ><span class="menuspacer"  id="iepubnav5" ><a href="index.cfm?fuseaction=home.getstarted&clearfuseattribs=true" id="link1100" target="_new" onclick=" setCookie('EXPMENU', 1100, 0, '/eats/rggi/','rggi-coats.org','true');" title="User's Guide" onFocus="if(this.blur)this.blur()">User's Guide</a></span></li>
+<li onFocus="if(this.blur)this.blur()" class="menuList" id="iepubnav6" ><span class="menuspacer"  id="iepubnav7" ><a href="index.cfm?fuseaction=home.faq&clearfuseattribs=true" id="link1200" target="_new" onclick=" setCookie('EXPMENU', 1200, 0, '/eats/rggi/','rggi-coats.org','true');" title="Frequently Asked Questions" onFocus="if(this.blur)this.blur()">Frequently Asked Questions</a></span></li>
+</ul>
+</span></li>
+<li onFocus="if(this.blur)this.blur()" class="last menuList"><span class="menuspacer" id="iepubnav8" ><img src="image/layout/_rggi/whiteverticalbar.gif" class="menuleadingbullet" border="0" /> <a href="index.cfm?fuseaction=home.home&clearfuseattribs=true" id="link1300" target="" onclick=" setCookie('EXPMENU', 1300, 0, '/eats/rggi/','rggi-coats.org','true');" title="Home" onFocus="if(this.blur)this.blur()">Home</a></span></li></ul>
+
+    
+    <div id="content">
+	    <table width="100%" border="0" cellspacing="0" cellpadding="2">
+			<tr>
+				<td class="fuse">
+					<h1 class="circuit">
+						Reports: Quarterly Emissions- Facility Level View 
+					</h1>
+				</td>
+				<td valign="top" align="right">&nbsp;
+					<nobr><a class="buttonTextLo" onmouseover="buttonTextHi(this);" title="Print" href="javascript:void(0);" onclick="dspPrint();return false;" id="printButton" onmouseout="buttonTextLo(this);">Print</a></nobr> <nobr><a title="Help" onmouseover="buttonTextHi(this);" id="printButton" onclick="dspHelpWin=window.open('index.cfm?fuseaction=home.help&mc_id=82&obj_id=654&isiframe=true'+helpAnchor,'Help','toolbar=no,height=450,width=700,resizable=yes,scrollbars=yes');dspHelpWin.focus();return false;" class="buttonTextLo" onmouseout="buttonTextLo(this);" href="javascript:void(0);">Help</a></nobr> 
+				</td>
+			</tr>
+	 	</table> If an emitting source has not reported emissions for all units for the specified period, the Reporting Status column will contain an "Incomplete."  If the Reporting Status column contains an "Incomplete" but emissions data is present, the emitting source has reported data for a portion of the period or for at least one unit at a multi-unit facility. <p>The Reporting Status column on the quarterly emissions report will contain "Incomplete" until after the corresponding quarter ends. Emitting sources must report emissions for a quarter within thirty days following the end of the quarter covered by the report. <p>Sources for which no emissions were reported due to unit operating status as reported to the U.S. EPA's CAMD Business System are considered not operating.  Sources that were not operating as of January 1, 2012 and are not anticipated to operate going forward are not considered CO<sub>2</sub> budget sources for the second control period (January 1, 2012 through December 31, 2014). Should this unit resume operation in the future, the operating status would be reconsidered at that time. Not Operating sources have been removed from the RGGI COATS Sources report.</p><p><b>Emissions data provided in the RGGI COATS report may not include all emitting units or emissions for a specific time period due to pending data processing or resolution of technical source reporting issues.</b>  The RGGI COATS report indicates whether the reporting status is complete or incomplete.  Additionally, emissions data in RGGI COATS may be updated to reflect the correction of technical issues upon resubmission of data by source representatives.
+<p><b>Note:</b> New Jersey withdrew its agreement to the RGGI MOU effective January 1, 2012. Emissions from New Jersey sources are reported for the first control period only (January 1, 2009 - December 31, 2011).</p> <table width="" border="0" cellspacing="0" cellpadding="2">
+					<tr>
+						<th class="fuse">
+							<b>Filter Criteria</b>
+						</th>
+					</tr>
+				</table>
+			
+			<table label="wrapper" width="100%" border="0" cellspacing="0" cellpadding="2" >
+				<tr>
+					<td colspan="2" class="fuse">
+						<table label="formy" border="1" width="" cellpadding="0" cellspacing="0" class="border">
+							<tr>
+								<td>
+									<table border="0" cellpadding="2" cellspacing="2" class="">
+			
+						<tr>
+							<th class="fuse">
+								<label for="FILTER_BEGINNING_YEAR">Beginning Year</label> 
+							</th>
+							<td class="fuse" align="left">
+								<span class="readonly" id="FILTER_BEGINNING_YEAR">2009</span><input type="hidden" name="FILTER_BEGINNING_YEAR" value="2009"> 
+							</td>
+						</tr>
+					
+						<tr>
+							<th class="fuse">
+								<label for="FILTER_ENDING_YEAR">Ending Year</label> 
+							</th>
+							<td class="fuse" align="left">
+								<span class="readonly" id="FILTER_ENDING_YEAR">2015</span><input type="hidden" name="FILTER_ENDING_YEAR" value="2015"> 
+							</td>
+						</tr>
+					
+						<tr>
+							<th class="fuse">
+								<label for="FILTER_BEGINNING_QUARTER">Beginning Quarter</label> 
+							</th>
+							<td class="fuse" align="left">
+								<span class="readonly" id="FILTER_BEGINNING_QUARTER">1</span><input type="hidden" name="FILTER_BEGINNING_QUARTER" value="1"> 
+							</td>
+						</tr>
+					
+						<tr>
+							<th class="fuse">
+								<label for="FILTER_ENDING_QUARTER">Ending Quarter</label> 
+							</th>
+							<td class="fuse" align="left">
+								<span class="readonly" id="FILTER_ENDING_QUARTER">4</span><input type="hidden" name="FILTER_ENDING_QUARTER" value="4"> 
+							</td>
+						</tr>
+					
+		</table>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				
+			</table> 
+		<table width="100%" border="0" cellspacing="0" cellpadding="0" class="circuit">
+		
+		<tr><td colspan="2">
+			<div class="dataTableContainer" id="grid_1"><table width="100%" cellspacing="0" cellpadding="2" class="dataTable" id="grid_1_table">
+
+		<thead class="dataTableHeader" id="grid_1_thead"><tr>
+		
+				<th >Year</th>
+			
+				<th >Qtr</th>
+			
+				<th >Source Name</th>
+			
+				<th >ORIS Code</th>
+			
+				<th >Unit ID(s)</th>
+			
+				<th >State</th>
+			
+				<th >State Identifier</th>
+			
+				<th >Control Period</th>
+			
+				<th >Op Time</th>
+			
+				<th >Op Hours</th>
+			
+				<th >CO<sub>2</sub> Mass (Tons)</th>
+			
+				<th >Heat Input (mmBtu)</th>
+			
+				<th >Eligible Biomass (Tons) (State Value)</th>
+			
+				<th >Reporting Status</th>
+			
+		</tr></thead>
+		
+
+		
+		<tbody class="dataTableBody" id="grid_1_tbody">
+		
+				<tr valign="baseline">
+			
+					<td >2010&nbsp;</td>
+				
+					<td >4&nbsp;</td>
+				
+					<td >Equus  Power I&nbsp;</td>
+				
+					<td >56032&nbsp;</td>
+				
+					<td >0001&nbsp;</td>
+				
+					<td >NY&nbsp;</td>
+				
+					<td >1282004508&nbsp;</td>
+				
+					<td >01&#x2f;01&#x2f;2009 - 12&#x2f;31&#x2f;2011&nbsp;</td>
+				
+					<td >101.75&nbsp;</td>
+				
+					<td >135&nbsp;</td>
+				
+					<td >2,662.725&nbsp;</td>
+				
+					<td >44,771&nbsp;</td>
+				
+					<td >0.000&nbsp;</td>
+				
+					<td >Complete&nbsp;</td>
+				
+			</tr>
+			
+				<tr valign="baseline">
+			
+					<td >2011&nbsp;</td>
+				
+					<td >1&nbsp;</td>
+				
+					<td >Equus  Power I&nbsp;</td>
+				
+					<td >56032&nbsp;</td>
+				
+					<td >0001&nbsp;</td>
+				
+					<td >NY&nbsp;</td>
+				
+					<td >1282004508&nbsp;</td>
+				
+					<td >01&#x2f;01&#x2f;2009 - 12&#x2f;31&#x2f;2011&nbsp;</td>
+				
+					<td >157.00&nbsp;</td>
+				
+					<td >220&nbsp;</td>
+				
+					<td >4,028.600&nbsp;</td>
+				
+					<td >66,489&nbsp;</td>
+				
+					<td >0.000&nbsp;</td>
+				
+					<td >Complete&nbsp;</td>
+				
+			</tr>
+			
+				<tr valign="baseline">
+			
+					<td >2011&nbsp;</td>
+				
+					<td >2&nbsp;</td>
+				
+					<td >Equus  Power I&nbsp;</td>
+				
+					<td >56032&nbsp;</td>
+				
+					<td >0001&nbsp;</td>
+				
+					<td >NY&nbsp;</td>
+				
+					<td >1282004508&nbsp;</td>
+				
+					<td >01&#x2f;01&#x2f;2009 - 12&#x2f;31&#x2f;2011&nbsp;</td>
+				
+					<td >440.50&nbsp;</td>
+				
+					<td >518&nbsp;</td>
+				
+					<td >12,069.950&nbsp;</td>
+				
+					<td >203,122&nbsp;</td>
+				
+					<td >0.000&nbsp;</td>
+				
+					<td >Complete&nbsp;</td>
+				
+			</tr>
+			
+				<tr valign="baseline">
+			
+					<td >2011&nbsp;</td>
+				
+					<td >3&nbsp;</td>
+				
+					<td >Equus  Power I&nbsp;</td>
+				
+					<td >56032&nbsp;</td>
+				
+					<td >0001&nbsp;</td>
+				
+					<td >NY&nbsp;</td>
+				
+					<td >1282004508&nbsp;</td>
+				
+					<td >01&#x2f;01&#x2f;2009 - 12&#x2f;31&#x2f;2011&nbsp;</td>
+				
+					<td >1,046.50&nbsp;</td>
+				
+					<td >1,181&nbsp;</td>
+				
+					<td >29,167.850&nbsp;</td>
+				
+					<td >490,765&nbsp;</td>
+				
+					<td >0.000&nbsp;</td>
+				
+					<td >Complete&nbsp;</td>
+				
+			</tr>
+			
+				<tr valign="baseline">
+			
+					<td >2011&nbsp;</td>
+				
+					<td >4&nbsp;</td>
+				
+					<td >Equus  Power I&nbsp;</td>
+				
+					<td >56032&nbsp;</td>
+				
+					<td >0001&nbsp;</td>
+				
+					<td >NY&nbsp;</td>
+				
+					<td >1282004508&nbsp;</td>
+				
+					<td >01&#x2f;01&#x2f;2009 - 12&#x2f;31&#x2f;2011&nbsp;</td>
+				
+					<td >465.50&nbsp;</td>
+				
+					<td >571&nbsp;</td>
+				
+					<td >12,758.800&nbsp;</td>
+				
+					<td >214,690&nbsp;</td>
+				
+					<td >0.000&nbsp;</td>
+				
+					<td >Complete&nbsp;</td>
+				
+			</tr>
+			
+				<tr valign="baseline">
+			
+					<td >2012&nbsp;</td>
+				
+					<td >1&nbsp;</td>
+				
+					<td >Equus  Power I&nbsp;</td>
+				
+					<td >56032&nbsp;</td>
+				
+					<td >0001&nbsp;</td>
+				
+					<td >NY&nbsp;</td>
+				
+					<td >1282004508&nbsp;</td>
+				
+					<td >01&#x2f;01&#x2f;2012 - 12&#x2f;31&#x2f;2014&nbsp;</td>
+				
+					<td >223.75&nbsp;</td>
+				
+					<td >295&nbsp;</td>
+				
+					<td >5,961.275&nbsp;</td>
+				
+					<td >100,309&nbsp;</td>
+				
+					<td >0.000&nbsp;</td>
+				
+					<td >Complete&nbsp;</td>
+				
+			</tr>
+			
+				<tr valign="baseline">
+			
+					<td >2012&nbsp;</td>
+				
+					<td >2&nbsp;</td>
+				
+					<td >Equus  Power I&nbsp;</td>
+				
+					<td >56032&nbsp;</td>
+				
+					<td >0001&nbsp;</td>
+				
+					<td >NY&nbsp;</td>
+				
+					<td >1282004508&nbsp;</td>
+				
+					<td >01&#x2f;01&#x2f;2012 - 12&#x2f;31&#x2f;2014&nbsp;</td>
+				
+					<td >375.50&nbsp;</td>
+				
+					<td >428&nbsp;</td>
+				
+					<td >10,555.600&nbsp;</td>
+				
+					<td >177,607&nbsp;</td>
+				
+					<td >0.000&nbsp;</td>
+				
+					<td >Complete&nbsp;</td>
+				
+			</tr>
+			
+				<tr valign="baseline">
+			
+					<td >2012&nbsp;</td>
+				
+					<td >3&nbsp;</td>
+				
+					<td >Equus  Power I&nbsp;</td>
+				
+					<td >56032&nbsp;</td>
+				
+					<td >0001&nbsp;</td>
+				
+					<td >NY&nbsp;</td>
+				
+					<td >1282004508&nbsp;</td>
+				
+					<td >01&#x2f;01&#x2f;2012 - 12&#x2f;31&#x2f;2014&nbsp;</td>
+				
+					<td >358.75&nbsp;</td>
+				
+					<td >413&nbsp;</td>
+				
+					<td >9,772.550&nbsp;</td>
+				
+					<td >164,438&nbsp;</td>
+				
+					<td >0.000&nbsp;</td>
+				
+					<td >Complete&nbsp;</td>
+				
+			</tr>
+			
+				<tr valign="baseline">
+			
+					<td >2012&nbsp;</td>
+				
+					<td >4&nbsp;</td>
+				
+					<td >Equus  Power I&nbsp;</td>
+				
+					<td >56032&nbsp;</td>
+				
+					<td >0001&nbsp;</td>
+				
+					<td >NY&nbsp;</td>
+				
+					<td >1282004508&nbsp;</td>
+				
+					<td >01&#x2f;01&#x2f;2012 - 12&#x2f;31&#x2f;2014&nbsp;</td>
+				
+					<td >457.75&nbsp;</td>
+				
+					<td >526&nbsp;</td>
+				
+					<td >11,770.450&nbsp;</td>
+				
+					<td >198,067&nbsp;</td>
+				
+					<td >0.000&nbsp;</td>
+				
+					<td >Complete&nbsp;</td>
+				
+			</tr>
+			
+				<tr valign="baseline">
+			
+					<td >2013&nbsp;</td>
+				
+					<td >1&nbsp;</td>
+				
+					<td >Equus  Power I&nbsp;</td>
+				
+					<td >56032&nbsp;</td>
+				
+					<td >0001&nbsp;</td>
+				
+					<td >NY&nbsp;</td>
+				
+					<td >1282004508&nbsp;</td>
+				
+					<td >01&#x2f;01&#x2f;2012 - 12&#x2f;31&#x2f;2014&nbsp;</td>
+				
+					<td >662.50&nbsp;</td>
+				
+					<td >751&nbsp;</td>
+				
+					<td >18,393.475&nbsp;</td>
+				
+					<td >309,502&nbsp;</td>
+				
+					<td >0.000&nbsp;</td>
+				
+					<td >Complete&nbsp;</td>
+				
+			</tr>
+			
+				<tr valign="baseline">
+			
+					<td >2013&nbsp;</td>
+				
+					<td >2&nbsp;</td>
+				
+					<td >Equus  Power I&nbsp;</td>
+				
+					<td >56032&nbsp;</td>
+				
+					<td >0001&nbsp;</td>
+				
+					<td >NY&nbsp;</td>
+				
+					<td >1282004508&nbsp;</td>
+				
+					<td >01&#x2f;01&#x2f;2012 - 12&#x2f;31&#x2f;2014&nbsp;</td>
+				
+					<td >414.00&nbsp;</td>
+				
+					<td >473&nbsp;</td>
+				
+					<td >11,836.925&nbsp;</td>
+				
+					<td >199,178&nbsp;</td>
+				
+					<td >0.000&nbsp;</td>
+				
+					<td >Complete&nbsp;</td>
+				
+			</tr>
+			
+				<tr valign="baseline">
+			
+					<td >2013&nbsp;</td>
+				
+					<td >3&nbsp;</td>
+				
+					<td >Equus  Power I&nbsp;</td>
+				
+					<td >56032&nbsp;</td>
+				
+					<td >0001&nbsp;</td>
+				
+					<td >NY&nbsp;</td>
+				
+					<td >1282004508&nbsp;</td>
+				
+					<td >01&#x2f;01&#x2f;2012 - 12&#x2f;31&#x2f;2014&nbsp;</td>
+				
+					<td >832.00&nbsp;</td>
+				
+					<td >934&nbsp;</td>
+				
+					<td >23,761.025&nbsp;</td>
+				
+					<td >399,859&nbsp;</td>
+				
+					<td >0.000&nbsp;</td>
+				
+					<td >Complete&nbsp;</td>
+				
+			</tr>
+			
+				<tr valign="baseline">
+			
+					<td >2013&nbsp;</td>
+				
+					<td >4&nbsp;</td>
+				
+					<td >Equus  Power I&nbsp;</td>
+				
+					<td >56032&nbsp;</td>
+				
+					<td >0001&nbsp;</td>
+				
+					<td >NY&nbsp;</td>
+				
+					<td >1282004508&nbsp;</td>
+				
+					<td >01&#x2f;01&#x2f;2012 - 12&#x2f;31&#x2f;2014&nbsp;</td>
+				
+					<td >486.00&nbsp;</td>
+				
+					<td >596&nbsp;</td>
+				
+					<td >13,695.250&nbsp;</td>
+				
+					<td >230,457&nbsp;</td>
+				
+					<td >0.000&nbsp;</td>
+				
+					<td >Complete&nbsp;</td>
+				
+			</tr>
+			
+				<tr valign="baseline">
+			
+					<td >2014&nbsp;</td>
+				
+					<td >1&nbsp;</td>
+				
+					<td >Equus  Power I&nbsp;</td>
+				
+					<td >56032&nbsp;</td>
+				
+					<td >0001&nbsp;</td>
+				
+					<td >NY&nbsp;</td>
+				
+					<td >1282004508&nbsp;</td>
+				
+					<td >01&#x2f;01&#x2f;2012 - 12&#x2f;31&#x2f;2014&nbsp;</td>
+				
+					<td >374.00&nbsp;</td>
+				
+					<td >452&nbsp;</td>
+				
+					<td >11,349.075&nbsp;</td>
+				
+					<td >167,361&nbsp;</td>
+				
+					<td >0.000&nbsp;</td>
+				
+					<td >Complete&nbsp;</td>
+				
+			</tr>
+			
+				<tr valign="baseline">
+			
+					<td >2014&nbsp;</td>
+				
+					<td >2&nbsp;</td>
+				
+					<td >Equus  Power I&nbsp;</td>
+				
+					<td >56032&nbsp;</td>
+				
+					<td >0001&nbsp;</td>
+				
+					<td >NY&nbsp;</td>
+				
+					<td >1282004508&nbsp;</td>
+				
+					<td >01&#x2f;01&#x2f;2012 - 12&#x2f;31&#x2f;2014&nbsp;</td>
+				
+					<td >356.50&nbsp;</td>
+				
+					<td >433&nbsp;</td>
+				
+					<td >9,957.675&nbsp;</td>
+				
+					<td >167,559&nbsp;</td>
+				
+					<td >0.000&nbsp;</td>
+				
+					<td >Complete&nbsp;</td>
+				
+			</tr>
+			
+				<tr valign="baseline">
+			
+					<td >2014&nbsp;</td>
+				
+					<td >3&nbsp;</td>
+				
+					<td >Equus  Power I&nbsp;</td>
+				
+					<td >56032&nbsp;</td>
+				
+					<td >0001&nbsp;</td>
+				
+					<td >NY&nbsp;</td>
+				
+					<td >1282004508&nbsp;</td>
+				
+					<td >01&#x2f;01&#x2f;2012 - 12&#x2f;31&#x2f;2014&nbsp;</td>
+				
+					<td >717.00&nbsp;</td>
+				
+					<td >815&nbsp;</td>
+				
+					<td >20,147.400&nbsp;</td>
+				
+					<td >339,037&nbsp;</td>
+				
+					<td >0.000&nbsp;</td>
+				
+					<td >Complete&nbsp;</td>
+				
+			</tr>
+			
+				<tr valign="baseline">
+			
+					<td >2014&nbsp;</td>
+				
+					<td >4&nbsp;</td>
+				
+					<td >Equus  Power I&nbsp;</td>
+				
+					<td >56032&nbsp;</td>
+				
+					<td >0001&nbsp;</td>
+				
+					<td >NY&nbsp;</td>
+				
+					<td >1282004508&nbsp;</td>
+				
+					<td >01&#x2f;01&#x2f;2012 - 12&#x2f;31&#x2f;2014&nbsp;</td>
+				
+					<td >883.25&nbsp;</td>
+				
+					<td >992&nbsp;</td>
+				
+					<td >24,749.575&nbsp;</td>
+				
+					<td >416,489&nbsp;</td>
+				
+					<td >0.000&nbsp;</td>
+				
+					<td >Complete&nbsp;</td>
+				
+			</tr>
+			
+				<tr valign="baseline">
+			
+					<td >2015&nbsp;</td>
+				
+					<td >1&nbsp;</td>
+				
+					<td >Equus  Power I&nbsp;</td>
+				
+					<td >56032&nbsp;</td>
+				
+					<td >0001&nbsp;</td>
+				
+					<td >NY&nbsp;</td>
+				
+					<td >1282004508&nbsp;</td>
+				
+					<td >01&#x2f;01&#x2f;2015 - 12&#x2f;31&#x2f;2017&nbsp;</td>
+				
+					<td >727.50&nbsp;</td>
+				
+					<td >863&nbsp;</td>
+				
+					<td >21,167.750&nbsp;</td>
+				
+					<td >335,614&nbsp;</td>
+				
+					<td >0.000&nbsp;</td>
+				
+					<td >Complete&nbsp;</td>
+				
+			</tr>
+			
+				<tr valign="baseline">
+			
+					<td >2009&nbsp;</td>
+				
+					<td >1&nbsp;</td>
+				
+					<td >Pinelawn Power&nbsp;</td>
+				
+					<td >56188&nbsp;</td>
+				
+					<td >00001&nbsp;</td>
+				
+					<td >NY&nbsp;</td>
+				
+					<td >1472003061&nbsp;</td>
+				
+					<td >01&#x2f;01&#x2f;2009 - 12&#x2f;31&#x2f;2011&nbsp;</td>
+				
+					<td >738.50&nbsp;</td>
+				
+					<td >796&nbsp;</td>
+				
+					<td >23,385.425&nbsp;</td>
+				
+					<td >377,553&nbsp;</td>
+				
+					<td >0.000&nbsp;</td>
+				
+					<td >Complete&nbsp;</td>
+				
+			</tr>
+			
+				<tr valign="baseline">
+			
+					<td >2009&nbsp;</td>
+				
+					<td >2&nbsp;</td>
+				
+					<td >Pinelawn Power&nbsp;</td>
+				
+					<td >56188&nbsp;</td>
+				
+					<td >00001&nbsp;</td>
+				
+					<td >NY&nbsp;</td>
+				
+					<td >1472003061&nbsp;</td>
+				
+					<td >01&#x2f;01&#x2f;2009 - 12&#x2f;31&#x2f;2011&nbsp;</td>
+				
+					<td >759.75&nbsp;</td>
+				
+					<td >790&nbsp;</td>
+				
+					<td >22,626.225&nbsp;</td>
+				
+					<td >380,717&nbsp;</td>
+				
+					<td >0.000&nbsp;</td>
+				
+					<td >Complete&nbsp;</td>
+				
+			</tr>
+			
+				<tr valign="baseline">
+			
+					<td >2009&nbsp;</td>
+				
+					<td >3&nbsp;</td>
+				
+					<td >Pinelawn Power&nbsp;</td>
+				
+					<td >56188&nbsp;</td>
+				
+					<td >00001&nbsp;</td>
+				
+					<td >NY&nbsp;</td>
+				
+					<td >1472003061&nbsp;</td>
+				
+					<td >01&#x2f;01&#x2f;2009 - 12&#x2f;31&#x2f;2011&nbsp;</td>
+				
+					<td >1,293.50&nbsp;</td>
+				
+					<td >1,385&nbsp;</td>
+				
+					<td >41,709.650&nbsp;</td>
+				
+					<td >701,883&nbsp;</td>
+				
+					<td >0.000&nbsp;</td>
+				
+					<td >Complete&nbsp;</td>
+				
+			</tr>
+			
+				<tr valign="baseline">
+			
+					<td >2009&nbsp;</td>
+				
+					<td >4&nbsp;</td>
+				
+					<td >Pinelawn Power&nbsp;</td>
+				
+					<td >56188&nbsp;</td>
+				
+					<td >00001&nbsp;</td>
+				
+					<td >NY&nbsp;</td>
+				
+					<td >1472003061&nbsp;</td>
+				
+					<td >01&#x2f;01&#x2f;2009 - 12&#x2f;31&#x2f;2011&nbsp;</td>
+				
+					<td >1,001.50&nbsp;</td>
+				
+					<td >1,084&nbsp;</td>
+				
+					<td >27,739.525&nbsp;</td>
+				
+					<td >466,760&nbsp;</td>
+				
+					<td >0.000&nbsp;</td>
+				
+					<td >Complete&nbsp;</td>
+				
+			</tr>
+			
+				<tr valign="baseline">
+			
+					<td >2010&nbsp;</td>
+				
+					<td >1&nbsp;</td>
+				
+					<td >Pinelawn Power&nbsp;</td>
+				
+					<td >56188&nbsp;</td>
+				
+					<td >00001&nbsp;</td>
+				
+					<td >NY&nbsp;</td>
+				
+					<td >1472003061&nbsp;</td>
+				
+					<td >01&#x2f;01&#x2f;2009 - 12&#x2f;31&#x2f;2011&nbsp;</td>
+				
+					<td >622.75&nbsp;</td>
+				
+					<td >678&nbsp;</td>
+				
+					<td >17,405.800&nbsp;</td>
+				
+					<td >292,887&nbsp;</td>
+				
+					<td >0.000&nbsp;</td>
+				
+					<td >Complete&nbsp;</td>
+				
+			</tr>
+			
+				<tr valign="baseline">
+			
+					<td >2010&nbsp;</td>
+				
+					<td >2&nbsp;</td>
+				
+					<td >Pinelawn Power&nbsp;</td>
+				
+					<td >56188&nbsp;</td>
+				
+					<td >00001&nbsp;</td>
+				
+					<td >NY&nbsp;</td>
+				
+					<td >1472003061&nbsp;</td>
+				
+					<td >01&#x2f;01&#x2f;2009 - 12&#x2f;31&#x2f;2011&nbsp;</td>
+				
+					<td >1,121.25&nbsp;</td>
+				
+					<td >1,214&nbsp;</td>
+				
+					<td >32,961.650&nbsp;</td>
+				
+					<td >554,616&nbsp;</td>
+				
+					<td >0.000&nbsp;</td>
+				
+					<td >Complete&nbsp;</td>
+				
+			</tr>
+			
+				<tr valign="baseline">
+			
+					<td >2010&nbsp;</td>
+				
+					<td >3&nbsp;</td>
+				
+					<td >Pinelawn Power&nbsp;</td>
+				
+					<td >56188&nbsp;</td>
+				
+					<td >00001&nbsp;</td>
+				
+					<td >NY&nbsp;</td>
+				
+					<td >1472003061&nbsp;</td>
+				
+					<td >01&#x2f;01&#x2f;2009 - 12&#x2f;31&#x2f;2011&nbsp;</td>
+				
+					<td >1,197.25&nbsp;</td>
+				
+					<td >1,276&nbsp;</td>
+				
+					<td >33,692.975&nbsp;</td>
+				
+					<td >566,962&nbsp;</td>
+				
+					<td >0.000&nbsp;</td>
+				
+					<td >Complete&nbsp;</td>
+				
+			</tr>
+			
+				<tr valign="baseline">
+			
+					<td >2010&nbsp;</td>
+				
+					<td >4&nbsp;</td>
+				
+					<td >Pinelawn Power&nbsp;</td>
+				
+					<td >56188&nbsp;</td>
+				
+					<td >00001&nbsp;</td>
+				
+					<td >NY&nbsp;</td>
+				
+					<td >1472003061&nbsp;</td>
+				
+					<td >01&#x2f;01&#x2f;2009 - 12&#x2f;31&#x2f;2011&nbsp;</td>
+				
+					<td >479.50&nbsp;</td>
+				
+					<td >513&nbsp;</td>
+				
+					<td >12,615.100&nbsp;</td>
+				
+					<td >212,281&nbsp;</td>
+				
+					<td >0.000&nbsp;</td>
+				
+					<td >Complete&nbsp;</td>
+				
+			</tr>
+			
+				<tr valign="baseline">
+			
+					<td >2011&nbsp;</td>
+				
+					<td >1&nbsp;</td>
+				
+					<td >Pinelawn Power&nbsp;</td>
+				
+					<td >56188&nbsp;</td>
+				
+					<td >00001&nbsp;</td>
+				
+					<td >NY&nbsp;</td>
+				
+					<td >1472003061&nbsp;</td>
+				
+					<td >01&#x2f;01&#x2f;2009 - 12&#x2f;31&#x2f;2011&nbsp;</td>
+				
+					<td >12.75&nbsp;</td>
+				
+					<td >15&nbsp;</td>
+				
+					<td >257.850&nbsp;</td>
+				
+					<td >3,890&nbsp;</td>
+				
+					<td >0.000&nbsp;</td>
+				
+					<td >Complete&nbsp;</td>
+				
+			</tr>
+			
+				<tr valign="baseline">
+			
+					<td >2011&nbsp;</td>
+				
+					<td >2&nbsp;</td>
+				
+					<td >Pinelawn Power&nbsp;</td>
+				
+					<td >56188&nbsp;</td>
+				
+					<td >00001&nbsp;</td>
+				
+					<td >NY&nbsp;</td>
+				
+					<td >1472003061&nbsp;</td>
+				
+					<td >01&#x2f;01&#x2f;2009 - 12&#x2f;31&#x2f;2011&nbsp;</td>
+				
+					<td >841.75&nbsp;</td>
+				
+					<td >920&nbsp;</td>
+				
+					<td >24,224.150&nbsp;</td>
+				
+					<td >407,632&nbsp;</td>
+				
+					<td >0.000&nbsp;</td>
+				
+					<td >Complete&nbsp;</td>
+				
+			</tr>
+			
+				<tr valign="baseline">
+			
+					<td >2011&nbsp;</td>
+				
+					<td >3&nbsp;</td>
+				
+					<td >Pinelawn Power&nbsp;</td>
+				
+					<td >56188&nbsp;</td>
+				
+					<td >00001&nbsp;</td>
+				
+					<td >NY&nbsp;</td>
+				
+					<td >1472003061&nbsp;</td>
+				
+					<td >01&#x2f;01&#x2f;2009 - 12&#x2f;31&#x2f;2011&nbsp;</td>
+				
+					<td >332.50&nbsp;</td>
+				
+					<td >355&nbsp;</td>
+				
+					<td >10,469.425&nbsp;</td>
+				
+					<td >176,152&nbsp;</td>
+				
+					<td >0.000&nbsp;</td>
+				
+					<td >Complete&nbsp;</td>
+				
+			</tr>
+			
+				<tr valign="baseline">
+			
+					<td >2011&nbsp;</td>
+				
+					<td >4&nbsp;</td>
+				
+					<td >Pinelawn Power&nbsp;</td>
+				
+					<td >56188&nbsp;</td>
+				
+					<td >00001&nbsp;</td>
+				
+					<td >NY&nbsp;</td>
+				
+					<td >1472003061&nbsp;</td>
+				
+					<td >01&#x2f;01&#x2f;2009 - 12&#x2f;31&#x2f;2011&nbsp;</td>
+				
+					<td >599.75&nbsp;</td>
+				
+					<td >641&nbsp;</td>
+				
+					<td >17,324.600&nbsp;</td>
+				
+					<td >291,509&nbsp;</td>
+				
+					<td >0.000&nbsp;</td>
+				
+					<td >Complete&nbsp;</td>
+				
+			</tr>
+			
+				<tr valign="baseline">
+			
+					<td >2012&nbsp;</td>
+				
+					<td >1&nbsp;</td>
+				
+					<td >Pinelawn Power&nbsp;</td>
+				
+					<td >56188&nbsp;</td>
+				
+					<td >00001&nbsp;</td>
+				
+					<td >NY&nbsp;</td>
+				
+					<td >1472003061&nbsp;</td>
+				
+					<td >01&#x2f;01&#x2f;2012 - 12&#x2f;31&#x2f;2014&nbsp;</td>
+				
+					<td >871.00&nbsp;</td>
+				
+					<td >943&nbsp;</td>
+				
+					<td >23,800.200&nbsp;</td>
+				
+					<td >400,456&nbsp;</td>
+				
+					<td >0.000&nbsp;</td>
+				
+					<td >Complete&nbsp;</td>
+				
+			</tr>
+			
+				<tr valign="baseline">
+			
+					<td >2012&nbsp;</td>
+				
+					<td >2&nbsp;</td>
+				
+					<td >Pinelawn Power&nbsp;</td>
+				
+					<td >56188&nbsp;</td>
+				
+					<td >00001&nbsp;</td>
+				
+					<td >NY&nbsp;</td>
+				
+					<td >1472003061&nbsp;</td>
+				
+					<td >01&#x2f;01&#x2f;2012 - 12&#x2f;31&#x2f;2014&nbsp;</td>
+				
+					<td >1,284.50&nbsp;</td>
+				
+					<td >1,353&nbsp;</td>
+				
+					<td >38,880.425&nbsp;</td>
+				
+					<td >654,217&nbsp;</td>
+				
+					<td >0.000&nbsp;</td>
+				
+					<td >Complete&nbsp;</td>
+				
+			</tr>
+			
+				<tr valign="baseline">
+			
+					<td >2012&nbsp;</td>
+				
+					<td >3&nbsp;</td>
+				
+					<td >Pinelawn Power&nbsp;</td>
+				
+					<td >56188&nbsp;</td>
+				
+					<td >00001&nbsp;</td>
+				
+					<td >NY&nbsp;</td>
+				
+					<td >1472003061&nbsp;</td>
+				
+					<td >01&#x2f;01&#x2f;2012 - 12&#x2f;31&#x2f;2014&nbsp;</td>
+				
+					<td >1,788.00&nbsp;</td>
+				
+					<td >1,846&nbsp;</td>
+				
+					<td >58,496.150&nbsp;</td>
+				
+					<td >984,297&nbsp;</td>
+				
+					<td >0.000&nbsp;</td>
+				
+					<td >Complete&nbsp;</td>
+				
+			</tr>
+			
+				<tr valign="baseline">
+			
+					<td >2012&nbsp;</td>
+				
+					<td >4&nbsp;</td>
+				
+					<td >Pinelawn Power&nbsp;</td>
+				
+					<td >56188&nbsp;</td>
+				
+					<td >00001&nbsp;</td>
+				
+					<td >NY&nbsp;</td>
+				
+					<td >1472003061&nbsp;</td>
+				
+					<td >01&#x2f;01&#x2f;2012 - 12&#x2f;31&#x2f;2014&nbsp;</td>
+				
+					<td >1,354.25&nbsp;</td>
+				
+					<td >1,410&nbsp;</td>
+				
+					<td >41,421.250&nbsp;</td>
+				
+					<td >697,016&nbsp;</td>
+				
+					<td >0.000&nbsp;</td>
+				
+					<td >Complete&nbsp;</td>
+				
+			</tr>
+			
+				<tr valign="baseline">
+			
+					<td >2013&nbsp;</td>
+				
+					<td >1&nbsp;</td>
+				
+					<td >Pinelawn Power&nbsp;</td>
+				
+					<td >56188&nbsp;</td>
+				
+					<td >00001&nbsp;</td>
+				
+					<td >NY&nbsp;</td>
+				
+					<td >1472003061&nbsp;</td>
+				
+					<td >01&#x2f;01&#x2f;2012 - 12&#x2f;31&#x2f;2014&nbsp;</td>
+				
+					<td >1,575.50&nbsp;</td>
+				
+					<td >1,659&nbsp;</td>
+				
+					<td >47,077.575&nbsp;</td>
+				
+					<td >792,170&nbsp;</td>
+				
+					<td >0.000&nbsp;</td>
+				
+					<td >Complete&nbsp;</td>
+				
+			</tr>
+			
+				<tr valign="baseline">
+			
+					<td >2013&nbsp;</td>
+				
+					<td >2&nbsp;</td>
+				
+					<td >Pinelawn Power&nbsp;</td>
+				
+					<td >56188&nbsp;</td>
+				
+					<td >00001&nbsp;</td>
+				
+					<td >NY&nbsp;</td>
+				
+					<td >1472003061&nbsp;</td>
+				
+					<td >01&#x2f;01&#x2f;2012 - 12&#x2f;31&#x2f;2014&nbsp;</td>
+				
+					<td >786.25&nbsp;</td>
+				
+					<td >843&nbsp;</td>
+				
+					<td >22,863.650&nbsp;</td>
+				
+					<td >384,727&nbsp;</td>
+				
+					<td >0.000&nbsp;</td>
+				
+					<td >Complete&nbsp;</td>
+				
+			</tr>
+			
+				<tr valign="baseline">
+			
+					<td >2013&nbsp;</td>
+				
+					<td >3&nbsp;</td>
+				
+					<td >Pinelawn Power&nbsp;</td>
+				
+					<td >56188&nbsp;</td>
+				
+					<td >00001&nbsp;</td>
+				
+					<td >NY&nbsp;</td>
+				
+					<td >1472003061&nbsp;</td>
+				
+					<td >01&#x2f;01&#x2f;2012 - 12&#x2f;31&#x2f;2014&nbsp;</td>
+				
+					<td >1,190.25&nbsp;</td>
+				
+					<td >1,264&nbsp;</td>
+				
+					<td >36,898.475&nbsp;</td>
+				
+					<td >620,890&nbsp;</td>
+				
+					<td >0.000&nbsp;</td>
+				
+					<td >Complete&nbsp;</td>
+				
+			</tr>
+			
+				<tr valign="baseline">
+			
+					<td >2013&nbsp;</td>
+				
+					<td >4&nbsp;</td>
+				
+					<td >Pinelawn Power&nbsp;</td>
+				
+					<td >56188&nbsp;</td>
+				
+					<td >00001&nbsp;</td>
+				
+					<td >NY&nbsp;</td>
+				
+					<td >1472003061&nbsp;</td>
+				
+					<td >01&#x2f;01&#x2f;2012 - 12&#x2f;31&#x2f;2014&nbsp;</td>
+				
+					<td >792.25&nbsp;</td>
+				
+					<td >837&nbsp;</td>
+				
+					<td >22,835.325&nbsp;</td>
+				
+					<td >384,262&nbsp;</td>
+				
+					<td >0.000&nbsp;</td>
+				
+					<td >Complete&nbsp;</td>
+				
+			</tr>
+			
+				<tr valign="baseline">
+			
+					<td >2014&nbsp;</td>
+				
+					<td >1&nbsp;</td>
+				
+					<td >Pinelawn Power&nbsp;</td>
+				
+					<td >56188&nbsp;</td>
+				
+					<td >00001&nbsp;</td>
+				
+					<td >NY&nbsp;</td>
+				
+					<td >1472003061&nbsp;</td>
+				
+					<td >01&#x2f;01&#x2f;2012 - 12&#x2f;31&#x2f;2014&nbsp;</td>
+				
+					<td >568.00&nbsp;</td>
+				
+					<td >625&nbsp;</td>
+				
+					<td >22,275.850&nbsp;</td>
+				
+					<td >323,035&nbsp;</td>
+				
+					<td >0.000&nbsp;</td>
+				
+					<td >Complete&nbsp;</td>
+				
+			</tr>
+			
+				<tr valign="baseline">
+			
+					<td >2014&nbsp;</td>
+				
+					<td >2&nbsp;</td>
+				
+					<td >Pinelawn Power&nbsp;</td>
+				
+					<td >56188&nbsp;</td>
+				
+					<td >00001&nbsp;</td>
+				
+					<td >NY&nbsp;</td>
+				
+					<td >1472003061&nbsp;</td>
+				
+					<td >01&#x2f;01&#x2f;2012 - 12&#x2f;31&#x2f;2014&nbsp;</td>
+				
+					<td >277.00&nbsp;</td>
+				
+					<td >311&nbsp;</td>
+				
+					<td >7,155.075&nbsp;</td>
+				
+					<td >120,403&nbsp;</td>
+				
+					<td >0.000&nbsp;</td>
+				
+					<td >Complete&nbsp;</td>
+				
+			</tr>
+			
+				<tr valign="baseline">
+			
+					<td >2014&nbsp;</td>
+				
+					<td >3&nbsp;</td>
+				
+					<td >Pinelawn Power&nbsp;</td>
+				
+					<td >56188&nbsp;</td>
+				
+					<td >00001&nbsp;</td>
+				
+					<td >NY&nbsp;</td>
+				
+					<td >1472003061&nbsp;</td>
+				
+					<td >01&#x2f;01&#x2f;2012 - 12&#x2f;31&#x2f;2014&nbsp;</td>
+				
+					<td >894.00&nbsp;</td>
+				
+					<td >975&nbsp;</td>
+				
+					<td >25,322.675&nbsp;</td>
+				
+					<td >426,090&nbsp;</td>
+				
+					<td >0.000&nbsp;</td>
+				
+					<td >Complete&nbsp;</td>
+				
+			</tr>
+			
+				<tr valign="baseline">
+			
+					<td >2014&nbsp;</td>
+				
+					<td >4&nbsp;</td>
+				
+					<td >Pinelawn Power&nbsp;</td>
+				
+					<td >56188&nbsp;</td>
+				
+					<td >00001&nbsp;</td>
+				
+					<td >NY&nbsp;</td>
+				
+					<td >1472003061&nbsp;</td>
+				
+					<td >01&#x2f;01&#x2f;2012 - 12&#x2f;31&#x2f;2014&nbsp;</td>
+				
+					<td >797.00&nbsp;</td>
+				
+					<td >855&nbsp;</td>
+				
+					<td >22,501.350&nbsp;</td>
+				
+					<td >378,635&nbsp;</td>
+				
+					<td >0.000&nbsp;</td>
+				
+					<td >Complete&nbsp;</td>
+				
+			</tr>
+			
+				<tr valign="baseline">
+			
+					<td >2015&nbsp;</td>
+				
+					<td >1&nbsp;</td>
+				
+					<td >Pinelawn Power&nbsp;</td>
+				
+					<td >56188&nbsp;</td>
+				
+					<td >00001&nbsp;</td>
+				
+					<td >NY&nbsp;</td>
+				
+					<td >1472003061&nbsp;</td>
+				
+					<td >01&#x2f;01&#x2f;2015 - 12&#x2f;31&#x2f;2017&nbsp;</td>
+				
+					<td >871.00&nbsp;</td>
+				
+					<td >942&nbsp;</td>
+				
+					<td >24,043.975&nbsp;</td>
+				
+					<td >381,756&nbsp;</td>
+				
+					<td >0.000&nbsp;</td>
+				
+					<td >Complete&nbsp;</td>
+				
+			</tr>
+			
+				<tr valign="baseline">
+			
+					<td >2009&nbsp;</td>
+				
+					<td >1&nbsp;</td>
+				
+					<td >Poletti 500 MW CC&nbsp;</td>
+				
+					<td >56196&nbsp;</td>
+				
+					<td >CTG7A, CTG7B&nbsp;</td>
+				
+					<td >NY&nbsp;</td>
+				
+					<td >2630100084&nbsp;</td>
+				
+					<td >01&#x2f;01&#x2f;2009 - 12&#x2f;31&#x2f;2011&nbsp;</td>
+				
+					<td >2,798.59&nbsp;</td>
+				
+					<td >2,827&nbsp;</td>
+				
+					<td >259,599.160&nbsp;</td>
+				
+					<td >4,351,320&nbsp;</td>
+				
+					<td >0.000&nbsp;</td>
+				
+					<td >Complete&nbsp;</td>
+				
+			</tr>
+			
+				<tr valign="baseline">
+			
+					<td >2009&nbsp;</td>
+				
+					<td >2&nbsp;</td>
+				
+					<td >Poletti 500 MW CC&nbsp;</td>
+				
+					<td >56196&nbsp;</td>
+				
+					<td >CTG7A, CTG7B&nbsp;</td>
+				
+					<td >NY&nbsp;</td>
+				
+					<td >2630100084&nbsp;</td>
+				
+					<td >01&#x2f;01&#x2f;2009 - 12&#x2f;31&#x2f;2011&nbsp;</td>
+				
+					<td >3,794.21&nbsp;</td>
+				
+					<td >3,824&nbsp;</td>
+				
+					<td >337,478.276&nbsp;</td>
+				
+					<td >5,660,263&nbsp;</td>
+				
+					<td >0.000&nbsp;</td>
+				
+					<td >Complete&nbsp;</td>
+				
+			</tr>
+			
+				<tr valign="baseline">
+			
+					<td >2009&nbsp;</td>
+				
+					<td >3&nbsp;</td>
+				
+					<td >Poletti 500 MW CC&nbsp;</td>
+				
+					<td >56196&nbsp;</td>
+				
+					<td >CTG7A, CTG7B&nbsp;</td>
+				
+					<td >NY&nbsp;</td>
+				
+					<td >2630100084&nbsp;</td>
+				
+					<td >01&#x2f;01&#x2f;2009 - 12&#x2f;31&#x2f;2011&nbsp;</td>
+				
+					<td >4,143.50&nbsp;</td>
+				
+					<td >4,178&nbsp;</td>
+				
+					<td >374,545.616&nbsp;</td>
+				
+					<td >6,301,573&nbsp;</td>
+				
+					<td >0.000&nbsp;</td>
+				
+					<td >Complete&nbsp;</td>
+				
+			</tr>
+			
+				<tr valign="baseline">
+			
+					<td >2009&nbsp;</td>
+				
+					<td >4&nbsp;</td>
+				
+					<td >Poletti 500 MW CC&nbsp;</td>
+				
+					<td >56196&nbsp;</td>
+				
+					<td >CTG7A, CTG7B&nbsp;</td>
+				
+					<td >NY&nbsp;</td>
+				
+					<td >2630100084&nbsp;</td>
+				
+					<td >01&#x2f;01&#x2f;2009 - 12&#x2f;31&#x2f;2011&nbsp;</td>
+				
+					<td >3,765.36&nbsp;</td>
+				
+					<td >3,826&nbsp;</td>
+				
+					<td >332,566.524&nbsp;</td>
+				
+					<td >5,588,070&nbsp;</td>
+				
+					<td >0.000&nbsp;</td>
+				
+					<td >Complete&nbsp;</td>
+				
+			</tr>
+			
+				<tr valign="baseline">
+			
+					<td >2010&nbsp;</td>
+				
+					<td >1&nbsp;</td>
+				
+					<td >Poletti 500 MW CC&nbsp;</td>
+				
+					<td >56196&nbsp;</td>
+				
+					<td >CTG7A, CTG7B&nbsp;</td>
+				
+					<td >NY&nbsp;</td>
+				
+					<td >2630100084&nbsp;</td>
+				
+					<td >01&#x2f;01&#x2f;2009 - 12&#x2f;31&#x2f;2011&nbsp;</td>
+				
+					<td >3,335.46&nbsp;</td>
+				
+					<td >3,371&nbsp;</td>
+				
+					<td >295,389.764&nbsp;</td>
+				
+					<td >4,969,335&nbsp;</td>
+				
+					<td >0.000&nbsp;</td>
+				
+					<td >Complete&nbsp;</td>
+				
+			</tr>
+			
+				<tr valign="baseline">
+			
+					<td >2010&nbsp;</td>
+				
+					<td >2&nbsp;</td>
+				
+					<td >Poletti 500 MW CC&nbsp;</td>
+				
+					<td >56196&nbsp;</td>
+				
+					<td >CTG7A, CTG7B&nbsp;</td>
+				
+					<td >NY&nbsp;</td>
+				
+					<td >2630100084&nbsp;</td>
+				
+					<td >01&#x2f;01&#x2f;2009 - 12&#x2f;31&#x2f;2011&nbsp;</td>
+				
+					<td >3,758.19&nbsp;</td>
+				
+					<td >3,800&nbsp;</td>
+				
+					<td >340,701.826&nbsp;</td>
+				
+					<td >5,732,478&nbsp;</td>
+				
+					<td >0.000&nbsp;</td>
+				
+					<td >Complete&nbsp;</td>
+				
+			</tr>
+			
+				<tr valign="baseline">
+			
+					<td >2010&nbsp;</td>
+				
+					<td >3&nbsp;</td>
+				
+					<td >Poletti 500 MW CC&nbsp;</td>
+				
+					<td >56196&nbsp;</td>
+				
+					<td >CTG7A, CTG7B&nbsp;</td>
+				
+					<td >NY&nbsp;</td>
+				
+					<td >2630100084&nbsp;</td>
+				
+					<td >01&#x2f;01&#x2f;2009 - 12&#x2f;31&#x2f;2011&nbsp;</td>
+				
+					<td >3,999.10&nbsp;</td>
+				
+					<td >4,023&nbsp;</td>
+				
+					<td >361,679.359&nbsp;</td>
+				
+					<td >6,085,253&nbsp;</td>
+				
+					<td >0.000&nbsp;</td>
+				
+					<td >Complete&nbsp;</td>
+				
+			</tr>
+			
+				<tr valign="baseline">
+			
+					<td >2010&nbsp;</td>
+				
+					<td >4&nbsp;</td>
+				
+					<td >Poletti 500 MW CC&nbsp;</td>
+				
+					<td >56196&nbsp;</td>
+				
+					<td >CTG7A, CTG7B&nbsp;</td>
+				
+					<td >NY&nbsp;</td>
+				
+					<td >2630100084&nbsp;</td>
+				
+					<td >01&#x2f;01&#x2f;2009 - 12&#x2f;31&#x2f;2011&nbsp;</td>
+				
+					<td >3,894.92&nbsp;</td>
+				
+					<td >3,920&nbsp;</td>
+				
+					<td >351,735.675&nbsp;</td>
+				
+					<td >5,896,501&nbsp;</td>
+				
+					<td >0.000&nbsp;</td>
+				
+					<td >Complete&nbsp;</td>
+				
+			</tr>
+			
+				<tr valign="baseline">
+			
+					<td >2011&nbsp;</td>
+				
+					<td >1&nbsp;</td>
+				
+					<td >Poletti 500 MW CC&nbsp;</td>
+				
+					<td >56196&nbsp;</td>
+				
+					<td >CTG7A, CTG7B&nbsp;</td>
+				
+					<td >NY&nbsp;</td>
+				
+					<td >2630100084&nbsp;</td>
+				
+					<td >01&#x2f;01&#x2f;2009 - 12&#x2f;31&#x2f;2011&nbsp;</td>
+				
+					<td >3,773.34&nbsp;</td>
+				
+					<td >3,807&nbsp;</td>
+				
+					<td >338,430.523&nbsp;</td>
+				
+					<td >5,691,802&nbsp;</td>
+				
+					<td >0.000&nbsp;</td>
+				
+					<td >Complete&nbsp;</td>
+				
+			</tr>
+			
+				<tr valign="baseline">
+			
+					<td >2011&nbsp;</td>
+				
+					<td >2&nbsp;</td>
+				
+					<td >Poletti 500 MW CC&nbsp;</td>
+				
+					<td >56196&nbsp;</td>
+				
+					<td >CTG7A, CTG7B&nbsp;</td>
+				
+					<td >NY&nbsp;</td>
+				
+					<td >2630100084&nbsp;</td>
+				
+					<td >01&#x2f;01&#x2f;2009 - 12&#x2f;31&#x2f;2011&nbsp;</td>
+				
+					<td >3,254.81&nbsp;</td>
+				
+					<td >3,275&nbsp;</td>
+				
+					<td >291,161.031&nbsp;</td>
+				
+					<td >4,899,170&nbsp;</td>
+				
+					<td >0.000&nbsp;</td>
+				
+					<td >Complete&nbsp;</td>
+				
+			</tr>
+			
+				<tr valign="baseline">
+			
+					<td >2011&nbsp;</td>
+				
+					<td >3&nbsp;</td>
+				
+					<td >Poletti 500 MW CC&nbsp;</td>
+				
+					<td >56196&nbsp;</td>
+				
+					<td >CTG7A, CTG7B&nbsp;</td>
+				
+					<td >NY&nbsp;</td>
+				
+					<td >2630100084&nbsp;</td>
+				
+					<td >01&#x2f;01&#x2f;2009 - 12&#x2f;31&#x2f;2011&nbsp;</td>
+				
+					<td >4,139.17&nbsp;</td>
+				
+					<td >4,168&nbsp;</td>
+				
+					<td >378,157.889&nbsp;</td>
+				
+					<td >6,362,776&nbsp;</td>
+				
+					<td >0.000&nbsp;</td>
+				
+					<td >Complete&nbsp;</td>
+				
+			</tr>
+			
+				<tr valign="baseline">
+			
+					<td >2011&nbsp;</td>
+				
+					<td >4&nbsp;</td>
+				
+					<td >Poletti 500 MW CC&nbsp;</td>
+				
+					<td >56196&nbsp;</td>
+				
+					<td >CTG7A, CTG7B&nbsp;</td>
+				
+					<td >NY&nbsp;</td>
+				
+					<td >2630100084&nbsp;</td>
+				
+					<td >01&#x2f;01&#x2f;2009 - 12&#x2f;31&#x2f;2011&nbsp;</td>
+				
+					<td >3,753.03&nbsp;</td>
+				
+					<td >3,845&nbsp;</td>
+				
+					<td >341,947.070&nbsp;</td>
+				
+					<td >5,752,609&nbsp;</td>
+				
+					<td >0.000&nbsp;</td>
+				
+					<td >Complete&nbsp;</td>
+				
+			</tr>
+			
+				<tr valign="baseline">
+			
+					<td >2012&nbsp;</td>
+				
+					<td >1&nbsp;</td>
+				
+					<td >Poletti 500 MW CC&nbsp;</td>
+				
+					<td >56196&nbsp;</td>
+				
+					<td >CTG7A, CTG7B&nbsp;</td>
+				
+					<td >NY&nbsp;</td>
+				
+					<td >2630100084&nbsp;</td>
+				
+					<td >01&#x2f;01&#x2f;2012 - 12&#x2f;31&#x2f;2014&nbsp;</td>
+				
+					<td >2,796.58&nbsp;</td>
+				
+					<td >2,830&nbsp;</td>
+				
+					<td >262,000.867&nbsp;</td>
+				
+					<td >4,408,660&nbsp;</td>
+				
+					<td >0.000&nbsp;</td>
+				
+					<td >Complete&nbsp;</td>
+				
+			</tr>
+			
+				<tr valign="baseline">
+			
+					<td >2012&nbsp;</td>
+				
+					<td >2&nbsp;</td>
+				
+					<td >Poletti 500 MW CC&nbsp;</td>
+				
+					<td >56196&nbsp;</td>
+				
+					<td >CTG7A, CTG7B&nbsp;</td>
+				
+					<td >NY&nbsp;</td>
+				
+					<td >2630100084&nbsp;</td>
+				
+					<td >01&#x2f;01&#x2f;2012 - 12&#x2f;31&#x2f;2014&nbsp;</td>
+				
+					<td >3,016.97&nbsp;</td>
+				
+					<td >3,044&nbsp;</td>
+				
+					<td >265,537.807&nbsp;</td>
+				
+					<td >4,466,263&nbsp;</td>
+				
+					<td >0.000&nbsp;</td>
+				
+					<td >Complete&nbsp;</td>
+				
+			</tr>
+			
+				<tr valign="baseline">
+			
+					<td >2012&nbsp;</td>
+				
+					<td >3&nbsp;</td>
+				
+					<td >Poletti 500 MW CC&nbsp;</td>
+				
+					<td >56196&nbsp;</td>
+				
+					<td >CTG7A, CTG7B&nbsp;</td>
+				
+					<td >NY&nbsp;</td>
+				
+					<td >2630100084&nbsp;</td>
+				
+					<td >01&#x2f;01&#x2f;2012 - 12&#x2f;31&#x2f;2014&nbsp;</td>
+				
+					<td >4,247.41&nbsp;</td>
+				
+					<td >4,260&nbsp;</td>
+				
+					<td >398,524.959&nbsp;</td>
+				
+					<td >6,698,195&nbsp;</td>
+				
+					<td >0.000&nbsp;</td>
+				
+					<td >Complete&nbsp;</td>
+				
+			</tr>
+			
+				<tr valign="baseline">
+			
+					<td >2012&nbsp;</td>
+				
+					<td >4&nbsp;</td>
+				
+					<td >Poletti 500 MW CC&nbsp;</td>
+				
+					<td >56196&nbsp;</td>
+				
+					<td >CTG7A, CTG7B&nbsp;</td>
+				
+					<td >NY&nbsp;</td>
+				
+					<td >2630100084&nbsp;</td>
+				
+					<td >01&#x2f;01&#x2f;2012 - 12&#x2f;31&#x2f;2014&nbsp;</td>
+				
+					<td >4,276.79&nbsp;</td>
+				
+					<td >4,294&nbsp;</td>
+				
+					<td >421,556.236&nbsp;</td>
+				
+					<td >7,085,289&nbsp;</td>
+				
+					<td >0.000&nbsp;</td>
+				
+					<td >Complete&nbsp;</td>
+				
+			</tr>
+			
+				<tr valign="baseline">
+			
+					<td >2013&nbsp;</td>
+				
+					<td >1&nbsp;</td>
+				
+					<td >Poletti 500 MW CC&nbsp;</td>
+				
+					<td >56196&nbsp;</td>
+				
+					<td >CTG7A, CTG7B&nbsp;</td>
+				
+					<td >NY&nbsp;</td>
+				
+					<td >2630100084&nbsp;</td>
+				
+					<td >01&#x2f;01&#x2f;2012 - 12&#x2f;31&#x2f;2014&nbsp;</td>
+				
+					<td >3,175.49&nbsp;</td>
+				
+					<td >3,198&nbsp;</td>
+				
+					<td >316,413.777&nbsp;</td>
+				
+					<td >5,193,824&nbsp;</td>
+				
+					<td >0.000&nbsp;</td>
+				
+					<td >Complete&nbsp;</td>
+				
+			</tr>
+			
+				<tr valign="baseline">
+			
+					<td >2013&nbsp;</td>
+				
+					<td >2&nbsp;</td>
+				
+					<td >Poletti 500 MW CC&nbsp;</td>
+				
+					<td >56196&nbsp;</td>
+				
+					<td >CTG7A, CTG7B&nbsp;</td>
+				
+					<td >NY&nbsp;</td>
+				
+					<td >2630100084&nbsp;</td>
+				
+					<td >01&#x2f;01&#x2f;2012 - 12&#x2f;31&#x2f;2014&nbsp;</td>
+				
+					<td >4,045.30&nbsp;</td>
+				
+					<td >4,054&nbsp;</td>
+				
+					<td >389,158.890&nbsp;</td>
+				
+					<td >6,544,489&nbsp;</td>
+				
+					<td >0.000&nbsp;</td>
+				
+					<td >Complete&nbsp;</td>
+				
+			</tr>
+			
+				<tr valign="baseline">
+			
+					<td >2013&nbsp;</td>
+				
+					<td >3&nbsp;</td>
+				
+					<td >Poletti 500 MW CC&nbsp;</td>
+				
+					<td >56196&nbsp;</td>
+				
+					<td >CTG7A, CTG7B&nbsp;</td>
+				
+					<td >NY&nbsp;</td>
+				
+					<td >2630100084&nbsp;</td>
+				
+					<td >01&#x2f;01&#x2f;2012 - 12&#x2f;31&#x2f;2014&nbsp;</td>
+				
+					<td >4,403.32&nbsp;</td>
+				
+					<td >4,406&nbsp;</td>
+				
+					<td >426,560.444&nbsp;</td>
+				
+					<td >7,177,717&nbsp;</td>
+				
+					<td >0.000&nbsp;</td>
+				
+					<td >Complete&nbsp;</td>
+				
+			</tr>
+			
+				<tr valign="baseline">
+			
+					<td >2013&nbsp;</td>
+				
+					<td >4&nbsp;</td>
+				
+					<td >Poletti 500 MW CC&nbsp;</td>
+				
+					<td >56196&nbsp;</td>
+				
+					<td >CTG7A, CTG7B&nbsp;</td>
+				
+					<td >NY&nbsp;</td>
+				
+					<td >2630100084&nbsp;</td>
+				
+					<td >01&#x2f;01&#x2f;2012 - 12&#x2f;31&#x2f;2014&nbsp;</td>
+				
+					<td >3,517.28&nbsp;</td>
+				
+					<td >3,532&nbsp;</td>
+				
+					<td >335,945.331&nbsp;</td>
+				
+					<td >5,615,162&nbsp;</td>
+				
+					<td >0.000&nbsp;</td>
+				
+					<td >Complete&nbsp;</td>
+				
+			</tr>
+			
+				<tr valign="baseline">
+			
+					<td >2014&nbsp;</td>
+				
+					<td >1&nbsp;</td>
+				
+					<td >Poletti 500 MW CC&nbsp;</td>
+				
+					<td >56196&nbsp;</td>
+				
+					<td >CTG7A, CTG7B&nbsp;</td>
+				
+					<td >NY&nbsp;</td>
+				
+					<td >2630100084&nbsp;</td>
+				
+					<td >01&#x2f;01&#x2f;2012 - 12&#x2f;31&#x2f;2014&nbsp;</td>
+				
+					<td >4,141.30&nbsp;</td>
+				
+					<td >4,159&nbsp;</td>
+				
+					<td >420,313.568&nbsp;</td>
+				
+					<td >6,818,011&nbsp;</td>
+				
+					<td >0.000&nbsp;</td>
+				
+					<td >Complete&nbsp;</td>
+				
+			</tr>
+			
+				<tr valign="baseline">
+			
+					<td >2014&nbsp;</td>
+				
+					<td >2&nbsp;</td>
+				
+					<td >Poletti 500 MW CC&nbsp;</td>
+				
+					<td >56196&nbsp;</td>
+				
+					<td >CTG7A, CTG7B&nbsp;</td>
+				
+					<td >NY&nbsp;</td>
+				
+					<td >2630100084&nbsp;</td>
+				
+					<td >01&#x2f;01&#x2f;2012 - 12&#x2f;31&#x2f;2014&nbsp;</td>
+				
+					<td >3,788.23&nbsp;</td>
+				
+					<td >3,797&nbsp;</td>
+				
+					<td >354,319.054&nbsp;</td>
+				
+					<td >5,957,661&nbsp;</td>
+				
+					<td >0.000&nbsp;</td>
+				
+					<td >Complete&nbsp;</td>
+				
+			</tr>
+			
+				<tr valign="baseline">
+			
+					<td >2014&nbsp;</td>
+				
+					<td >3&nbsp;</td>
+				
+					<td >Poletti 500 MW CC&nbsp;</td>
+				
+					<td >56196&nbsp;</td>
+				
+					<td >CTG7A, CTG7B&nbsp;</td>
+				
+					<td >NY&nbsp;</td>
+				
+					<td >2630100084&nbsp;</td>
+				
+					<td >01&#x2f;01&#x2f;2012 - 12&#x2f;31&#x2f;2014&nbsp;</td>
+				
+					<td >3,917.99&nbsp;</td>
+				
+					<td >3,924&nbsp;</td>
+				
+					<td >367,970.798&nbsp;</td>
+				
+					<td >6,190,687&nbsp;</td>
+				
+					<td >0.000&nbsp;</td>
+				
+					<td >Complete&nbsp;</td>
+				
+			</tr>
+			
+				<tr valign="baseline">
+			
+					<td >2014&nbsp;</td>
+				
+					<td >4&nbsp;</td>
+				
+					<td >Poletti 500 MW CC&nbsp;</td>
+				
+					<td >56196&nbsp;</td>
+				
+					<td >CTG7A, CTG7B&nbsp;</td>
+				
+					<td >NY&nbsp;</td>
+				
+					<td >2630100084&nbsp;</td>
+				
+					<td >01&#x2f;01&#x2f;2012 - 12&#x2f;31&#x2f;2014&nbsp;</td>
+				
+					<td >3,128.25&nbsp;</td>
+				
+					<td >3,146&nbsp;</td>
+				
+					<td >293,475.863&nbsp;</td>
+				
+					<td >4,937,141&nbsp;</td>
+				
+					<td >0.000&nbsp;</td>
+				
+					<td >Complete&nbsp;</td>
+				
+			</tr>
+			
+				<tr valign="baseline">
+			
+					<td >2015&nbsp;</td>
+				
+					<td >1&nbsp;</td>
+				
+					<td >Poletti 500 MW CC&nbsp;</td>
+				
+					<td >56196&nbsp;</td>
+				
+					<td >CTG7A, CTG7B&nbsp;</td>
+				
+					<td >NY&nbsp;</td>
+				
+					<td >2630100084&nbsp;</td>
+				
+					<td >01&#x2f;01&#x2f;2015 - 12&#x2f;31&#x2f;2017&nbsp;</td>
+				
+					<td >3,706.11&nbsp;</td>
+				
+					<td >3,721&nbsp;</td>
+				
+					<td >368,635.413&nbsp;</td>
+				
+					<td >6,001,704&nbsp;</td>
+				
+					<td >0.000&nbsp;</td>
+				
+					<td >Complete&nbsp;</td>
+				
+			</tr>
+			
+				<tr valign="baseline">
+			
+					<td >2009&nbsp;</td>
+				
+					<td >1&nbsp;</td>
+				
+					<td >Caithness Long Island Energy Center&nbsp;</td>
+				
+					<td >56234&nbsp;</td>
+				
+					<td >0001&nbsp;</td>
+				
+					<td >NY&nbsp;</td>
+				
+					<td >1472204426&nbsp;</td>
+				
+					<td >01&#x2f;01&#x2f;2009 - 12&#x2f;31&#x2f;2011&nbsp;</td>
+				
+					<td >Not Operating&nbsp;</td>
+				
+					<td >Not Operating&nbsp;</td>
+				
+					<td >Not Operating&nbsp;</td>
+				
+					<td >Not Operating&nbsp;</td>
+				
+					<td >Not Operating&nbsp;</td>
+				
+					<td >Complete&nbsp;</td>
+				
+			</tr>
+			
+				<tr valign="baseline">
+			
+					<td >2009&nbsp;</td>
+				
+					<td >2&nbsp;</td>
+				
+					<td >Caithness Long Island Energy Center&nbsp;</td>
+				
+					<td >56234&nbsp;</td>
+				
+					<td >0001&nbsp;</td>
+				
+					<td >NY&nbsp;</td>
+				
+					<td >1472204426&nbsp;</td>
+				
+					<td >01&#x2f;01&#x2f;2009 - 12&#x2f;31&#x2f;2011&nbsp;</td>
+				
+					<td >0.00&nbsp;</td>
+				
+					<td >0&nbsp;</td>
+				
+					<td >0.000&nbsp;</td>
+				
+					<td >0&nbsp;</td>
+				
+					<td >0.000&nbsp;</td>
+				
+					<td >Complete&nbsp;</td>
+				
+			</tr>
+			
+				<tr valign="baseline">
+			
+					<td >2009&nbsp;</td>
+				
+					<td >3&nbsp;</td>
+				
+					<td >Caithness Long Island Energy Center&nbsp;</td>
+				
+					<td >56234&nbsp;</td>
+				
+					<td >0001&nbsp;</td>
+				
+					<td >NY&nbsp;</td>
+				
+					<td >1472204426&nbsp;</td>
+				
+					<td >01&#x2f;01&#x2f;2009 - 12&#x2f;31&#x2f;2011&nbsp;</td>
+				
+					<td >1,424.37&nbsp;</td>
+				
+					<td >1,440&nbsp;</td>
+				
+					<td >144,979.413&nbsp;</td>
+				
+					<td >2,427,542&nbsp;</td>
+				
+					<td >0.000&nbsp;</td>
+				
+					<td >Complete&nbsp;</td>
+				
+			</tr>
+			
+				<tr valign="baseline">
+			
+					<td >2009&nbsp;</td>
+				
+					<td >4&nbsp;</td>
+				
+					<td >Caithness Long Island Energy Center&nbsp;</td>
+				
+					<td >56234&nbsp;</td>
+				
+					<td >0001&nbsp;</td>
+				
+					<td >NY&nbsp;</td>
+				
+					<td >1472204426&nbsp;</td>
+				
+					<td >01&#x2f;01&#x2f;2009 - 12&#x2f;31&#x2f;2011&nbsp;</td>
+				
+					<td >1,479.86&nbsp;</td>
+				
+					<td >1,519&nbsp;</td>
+				
+					<td >158,027.944&nbsp;</td>
+				
+					<td >2,658,309&nbsp;</td>
+				
+					<td >0.000&nbsp;</td>
+				
+					<td >Complete&nbsp;</td>
+				
+			</tr>
+			
+				<tr valign="baseline">
+			
+					<td >2010&nbsp;</td>
+				
+					<td >1&nbsp;</td>
+				
+					<td >Caithness Long Island Energy Center&nbsp;</td>
+				
+					<td >56234&nbsp;</td>
+				
+					<td >0001&nbsp;</td>
+				
+					<td >NY&nbsp;</td>
+				
+					<td >1472204426&nbsp;</td>
+				
+					<td >01&#x2f;01&#x2f;2009 - 12&#x2f;31&#x2f;2011&nbsp;</td>
+				
+					<td >2,051.01&nbsp;</td>
+				
+					<td >2,056&nbsp;</td>
+				
+					<td >227,008.131&nbsp;</td>
+				
+					<td >3,819,810&nbsp;</td>
+				
+					<td >0.000&nbsp;</td>
+				
+					<td >Complete&nbsp;</td>
+				
+			</tr>
+			
+				<tr valign="baseline">
+			
+					<td >2010&nbsp;</td>
+				
+					<td >2&nbsp;</td>
+				
+					<td >Caithness Long Island Energy Center&nbsp;</td>
+				
+					<td >56234&nbsp;</td>
+				
+					<td >0001&nbsp;</td>
+				
+					<td >NY&nbsp;</td>
+				
+					<td >1472204426&nbsp;</td>
+				
+					<td >01&#x2f;01&#x2f;2009 - 12&#x2f;31&#x2f;2011&nbsp;</td>
+				
+					<td >1,730.97&nbsp;</td>
+				
+					<td >1,740&nbsp;</td>
+				
+					<td >188,125.370&nbsp;</td>
+				
+					<td >3,165,528&nbsp;</td>
+				
+					<td >0.000&nbsp;</td>
+				
+					<td >Complete&nbsp;</td>
+				
+			</tr>
+			
+				<tr valign="baseline">
+			
+					<td >2010&nbsp;</td>
+				
+					<td >3&nbsp;</td>
+				
+					<td >Caithness Long Island Energy Center&nbsp;</td>
+				
+					<td >56234&nbsp;</td>
+				
+					<td >0001&nbsp;</td>
+				
+					<td >NY&nbsp;</td>
+				
+					<td >1472204426&nbsp;</td>
+				
+					<td >01&#x2f;01&#x2f;2009 - 12&#x2f;31&#x2f;2011&nbsp;</td>
+				
+					<td >2,178.01&nbsp;</td>
+				
+					<td >2,181&nbsp;</td>
+				
+					<td >250,244.963&nbsp;</td>
+				
+					<td >4,210,821&nbsp;</td>
+				
+					<td >0.000&nbsp;</td>
+				
+					<td >Complete&nbsp;</td>
+				
+			</tr>
+			
+				<tr valign="baseline">
+			
+					<td >2010&nbsp;</td>
+				
+					<td >4&nbsp;</td>
+				
+					<td >Caithness Long Island Energy Center&nbsp;</td>
+				
+					<td >56234&nbsp;</td>
+				
+					<td >0001&nbsp;</td>
+				
+					<td >NY&nbsp;</td>
+				
+					<td >1472204426&nbsp;</td>
+				
+					<td >01&#x2f;01&#x2f;2009 - 12&#x2f;31&#x2f;2011&nbsp;</td>
+				
+					<td >1,766.97&nbsp;</td>
+				
+					<td >1,779&nbsp;</td>
+				
+					<td >198,127.199&nbsp;</td>
+				
+					<td >3,333,790&nbsp;</td>
+				
+					<td >0.000&nbsp;</td>
+				
+					<td >Complete&nbsp;</td>
+				
+			</tr>
+			
+				<tr valign="baseline">
+			
+					<td >2011&nbsp;</td>
+				
+					<td >1&nbsp;</td>
+				
+					<td >Caithness Long Island Energy Center&nbsp;</td>
+				
+					<td >56234&nbsp;</td>
+				
+					<td >0001&nbsp;</td>
+				
+					<td >NY&nbsp;</td>
+				
+					<td >1472204426&nbsp;</td>
+				
+					<td >01&#x2f;01&#x2f;2009 - 12&#x2f;31&#x2f;2011&nbsp;</td>
+				
+					<td >2,010.92&nbsp;</td>
+				
+					<td >2,030&nbsp;</td>
+				
+					<td >222,686.237&nbsp;</td>
+				
+					<td >3,747,120&nbsp;</td>
+				
+					<td >0.000&nbsp;</td>
+				
+					<td >Complete&nbsp;</td>
+				
+			</tr>
+			
+				<tr valign="baseline">
+			
+					<td >2011&nbsp;</td>
+				
+					<td >2&nbsp;</td>
+				
+					<td >Caithness Long Island Energy Center&nbsp;</td>
+				
+					<td >56234&nbsp;</td>
+				
+					<td >0001&nbsp;</td>
+				
+					<td >NY&nbsp;</td>
+				
+					<td >1472204426&nbsp;</td>
+				
+					<td >01&#x2f;01&#x2f;2009 - 12&#x2f;31&#x2f;2011&nbsp;</td>
+				
+					<td >1,686.09&nbsp;</td>
+				
+					<td >1,697&nbsp;</td>
+				
+					<td >190,232.588&nbsp;</td>
+				
+					<td >3,201,060&nbsp;</td>
+				
+					<td >0.000&nbsp;</td>
+				
+					<td >Complete&nbsp;</td>
+				
+			</tr>
+			
+				<tr valign="baseline">
+			
+					<td >2011&nbsp;</td>
+				
+					<td >3&nbsp;</td>
+				
+					<td >Caithness Long Island Energy Center&nbsp;</td>
+				
+					<td >56234&nbsp;</td>
+				
+					<td >0001&nbsp;</td>
+				
+					<td >NY&nbsp;</td>
+				
+					<td >1472204426&nbsp;</td>
+				
+					<td >01&#x2f;01&#x2f;2009 - 12&#x2f;31&#x2f;2011&nbsp;</td>
+				
+					<td >2,158.25&nbsp;</td>
+				
+					<td >2,159&nbsp;</td>
+				
+					<td >260,868.898&nbsp;</td>
+				
+					<td >4,389,635&nbsp;</td>
+				
+					<td >0.000&nbsp;</td>
+				
+					<td >Complete&nbsp;</td>
+				
+			</tr>
+			
+				<tr valign="baseline">
+			
+					<td >2011&nbsp;</td>
+				
+					<td >4&nbsp;</td>
+				
+					<td >Caithness Long Island Energy Center&nbsp;</td>
+				
+					<td >56234&nbsp;</td>
+				
+					<td >0001&nbsp;</td>
+				
+					<td >NY&nbsp;</td>
+				
+					<td >1472204426&nbsp;</td>
+				
+					<td >01&#x2f;01&#x2f;2009 - 12&#x2f;31&#x2f;2011&nbsp;</td>
+				
+					<td >1,986.43&nbsp;</td>
+				
+					<td >1,989&nbsp;</td>
+				
+					<td >250,991.717&nbsp;</td>
+				
+					<td >4,223,394&nbsp;</td>
+				
+					<td >0.000&nbsp;</td>
+				
+					<td >Complete&nbsp;</td>
+				
+			</tr>
+			
+				<tr valign="baseline">
+			
+					<td >2012&nbsp;</td>
+				
+					<td >1&nbsp;</td>
+				
+					<td >Caithness Long Island Energy Center&nbsp;</td>
+				
+					<td >56234&nbsp;</td>
+				
+					<td >0001&nbsp;</td>
+				
+					<td >NY&nbsp;</td>
+				
+					<td >1472204426&nbsp;</td>
+				
+					<td >01&#x2f;01&#x2f;2012 - 12&#x2f;31&#x2f;2014&nbsp;</td>
+				
+					<td >2,182.07&nbsp;</td>
+				
+					<td >2,184&nbsp;</td>
+				
+					<td >245,229.019&nbsp;</td>
+				
+					<td >4,126,470&nbsp;</td>
+				
+					<td >0.000&nbsp;</td>
+				
+					<td >Complete&nbsp;</td>
+				
+			</tr>
+			
+				<tr valign="baseline">
+			
+					<td >2012&nbsp;</td>
+				
+					<td >2&nbsp;</td>
+				
+					<td >Caithness Long Island Energy Center&nbsp;</td>
+				
+					<td >56234&nbsp;</td>
+				
+					<td >0001&nbsp;</td>
+				
+					<td >NY&nbsp;</td>
+				
+					<td >1472204426&nbsp;</td>
+				
+					<td >01&#x2f;01&#x2f;2012 - 12&#x2f;31&#x2f;2014&nbsp;</td>
+				
+					<td >1,960.91&nbsp;</td>
+				
+					<td >1,965&nbsp;</td>
+				
+					<td >232,989.541&nbsp;</td>
+				
+					<td >3,920,227&nbsp;</td>
+				
+					<td >0.000&nbsp;</td>
+				
+					<td >Complete&nbsp;</td>
+				
+			</tr>
+			
+				<tr valign="baseline">
+			
+					<td >2012&nbsp;</td>
+				
+					<td >3&nbsp;</td>
+				
+					<td >Caithness Long Island Energy Center&nbsp;</td>
+				
+					<td >56234&nbsp;</td>
+				
+					<td >0001&nbsp;</td>
+				
+					<td >NY&nbsp;</td>
+				
+					<td >1472204426&nbsp;</td>
+				
+					<td >01&#x2f;01&#x2f;2012 - 12&#x2f;31&#x2f;2014&nbsp;</td>
+				
+					<td >2,151.04&nbsp;</td>
+				
+					<td >2,155&nbsp;</td>
+				
+					<td >268,859.159&nbsp;</td>
+				
+					<td >4,524,083&nbsp;</td>
+				
+					<td >0.000&nbsp;</td>
+				
+					<td >Complete&nbsp;</td>
+				
+			</tr>
+			
+				<tr valign="baseline">
+			
+					<td >2012&nbsp;</td>
+				
+					<td >4&nbsp;</td>
+				
+					<td >Caithness Long Island Energy Center&nbsp;</td>
+				
+					<td >56234&nbsp;</td>
+				
+					<td >0001&nbsp;</td>
+				
+					<td >NY&nbsp;</td>
+				
+					<td >1472204426&nbsp;</td>
+				
+					<td >01&#x2f;01&#x2f;2012 - 12&#x2f;31&#x2f;2014&nbsp;</td>
+				
+					<td >1,338.87&nbsp;</td>
+				
+					<td >1,345&nbsp;</td>
+				
+					<td >171,486.033&nbsp;</td>
+				
+					<td >2,885,301&nbsp;</td>
+				
+					<td >0.000&nbsp;</td>
+				
+					<td >Complete&nbsp;</td>
+				
+			</tr>
+			
+				<tr valign="baseline">
+			
+					<td >2013&nbsp;</td>
+				
+					<td >1&nbsp;</td>
+				
+					<td >Caithness Long Island Energy Center&nbsp;</td>
+				
+					<td >56234&nbsp;</td>
+				
+					<td >0001&nbsp;</td>
+				
+					<td >NY&nbsp;</td>
+				
+					<td >1472204426&nbsp;</td>
+				
+					<td >01&#x2f;01&#x2f;2012 - 12&#x2f;31&#x2f;2014&nbsp;</td>
+				
+					<td >1,935.54&nbsp;</td>
+				
+					<td >1,944&nbsp;</td>
+				
+					<td >242,076.900&nbsp;</td>
+				
+					<td >4,072,567&nbsp;</td>
+				
+					<td >0.000&nbsp;</td>
+				
+					<td >Complete&nbsp;</td>
+				
+			</tr>
+			
+				<tr valign="baseline">
+			
+					<td >2013&nbsp;</td>
+				
+					<td >2&nbsp;</td>
+				
+					<td >Caithness Long Island Energy Center&nbsp;</td>
+				
+					<td >56234&nbsp;</td>
+				
+					<td >0001&nbsp;</td>
+				
+					<td >NY&nbsp;</td>
+				
+					<td >1472204426&nbsp;</td>
+				
+					<td >01&#x2f;01&#x2f;2012 - 12&#x2f;31&#x2f;2014&nbsp;</td>
+				
+					<td >1,972.50&nbsp;</td>
+				
+					<td >1,974&nbsp;</td>
+				
+					<td >231,898.749&nbsp;</td>
+				
+					<td >3,901,425&nbsp;</td>
+				
+					<td >0.000&nbsp;</td>
+				
+					<td >Complete&nbsp;</td>
+				
+			</tr>
+			
+				<tr valign="baseline">
+			
+					<td >2013&nbsp;</td>
+				
+					<td >3&nbsp;</td>
+				
+					<td >Caithness Long Island Energy Center&nbsp;</td>
+				
+					<td >56234&nbsp;</td>
+				
+					<td >0001&nbsp;</td>
+				
+					<td >NY&nbsp;</td>
+				
+					<td >1472204426&nbsp;</td>
+				
+					<td >01&#x2f;01&#x2f;2012 - 12&#x2f;31&#x2f;2014&nbsp;</td>
+				
+					<td >2,157.17&nbsp;</td>
+				
+					<td >2,161&nbsp;</td>
+				
+					<td >251,637.742&nbsp;</td>
+				
+					<td >4,234,283&nbsp;</td>
+				
+					<td >0.000&nbsp;</td>
+				
+					<td >Complete&nbsp;</td>
+				
+			</tr>
+			
+				<tr valign="baseline">
+			
+					<td >2013&nbsp;</td>
+				
+					<td >4&nbsp;</td>
+				
+					<td >Caithness Long Island Energy Center&nbsp;</td>
+				
+					<td >56234&nbsp;</td>
+				
+					<td >0001&nbsp;</td>
+				
+					<td >NY&nbsp;</td>
+				
+					<td >1472204426&nbsp;</td>
+				
+					<td >01&#x2f;01&#x2f;2012 - 12&#x2f;31&#x2f;2014&nbsp;</td>
+				
+					<td >1,979.65&nbsp;</td>
+				
+					<td >1,985&nbsp;</td>
+				
+					<td >244,998.881&nbsp;</td>
+				
+					<td >4,122,542&nbsp;</td>
+				
+					<td >0.000&nbsp;</td>
+				
+					<td >Complete&nbsp;</td>
+				
+			</tr>
+			
+				<tr valign="baseline">
+			
+					<td >2014&nbsp;</td>
+				
+					<td >1&nbsp;</td>
+				
+					<td >Caithness Long Island Energy Center&nbsp;</td>
+				
+					<td >56234&nbsp;</td>
+				
+					<td >0001&nbsp;</td>
+				
+					<td >NY&nbsp;</td>
+				
+					<td >1472204426&nbsp;</td>
+				
+					<td >01&#x2f;01&#x2f;2012 - 12&#x2f;31&#x2f;2014&nbsp;</td>
+				
+					<td >2,156.69&nbsp;</td>
+				
+					<td >2,157&nbsp;</td>
+				
+					<td >272,606.464&nbsp;</td>
+				
+					<td >4,587,108&nbsp;</td>
+				
+					<td >0.000&nbsp;</td>
+				
+					<td >Complete&nbsp;</td>
+				
+			</tr>
+			
+				<tr valign="baseline">
+			
+					<td >2014&nbsp;</td>
+				
+					<td >2&nbsp;</td>
+				
+					<td >Caithness Long Island Energy Center&nbsp;</td>
+				
+					<td >56234&nbsp;</td>
+				
+					<td >0001&nbsp;</td>
+				
+					<td >NY&nbsp;</td>
+				
+					<td >1472204426&nbsp;</td>
+				
+					<td >01&#x2f;01&#x2f;2012 - 12&#x2f;31&#x2f;2014&nbsp;</td>
+				
+					<td >1,758.04&nbsp;</td>
+				
+					<td >1,762&nbsp;</td>
+				
+					<td >205,884.485&nbsp;</td>
+				
+					<td >3,464,394&nbsp;</td>
+				
+					<td >0.000&nbsp;</td>
+				
+					<td >Complete&nbsp;</td>
+				
+			</tr>
+			
+				<tr valign="baseline">
+			
+					<td >2014&nbsp;</td>
+				
+					<td >3&nbsp;</td>
+				
+					<td >Caithness Long Island Energy Center&nbsp;</td>
+				
+					<td >56234&nbsp;</td>
+				
+					<td >0001&nbsp;</td>
+				
+					<td >NY&nbsp;</td>
+				
+					<td >1472204426&nbsp;</td>
+				
+					<td >01&#x2f;01&#x2f;2012 - 12&#x2f;31&#x2f;2014&nbsp;</td>
+				
+					<td >2,141.86&nbsp;</td>
+				
+					<td >2,147&nbsp;</td>
+				
+					<td >256,371.880&nbsp;</td>
+				
+					<td >4,313,928&nbsp;</td>
+				
+					<td >0.000&nbsp;</td>
+				
+					<td >Complete&nbsp;</td>
+				
+			</tr>
+			
+				<tr valign="baseline">
+			
+					<td >2014&nbsp;</td>
+				
+					<td >4&nbsp;</td>
+				
+					<td >Caithness Long Island Energy Center&nbsp;</td>
+				
+					<td >56234&nbsp;</td>
+				
+					<td >0001&nbsp;</td>
+				
+					<td >NY&nbsp;</td>
+				
+					<td >1472204426&nbsp;</td>
+				
+					<td >01&#x2f;01&#x2f;2012 - 12&#x2f;31&#x2f;2014&nbsp;</td>
+				
+					<td >2,003.49&nbsp;</td>
+				
+					<td >2,007&nbsp;</td>
+				
+					<td >244,088.962&nbsp;</td>
+				
+					<td >4,106,804&nbsp;</td>
+				
+					<td >0.000&nbsp;</td>
+				
+					<td >Complete&nbsp;</td>
+				
+			</tr>
+			
+				<tr valign="baseline">
+			
+					<td >2015&nbsp;</td>
+				
+					<td >1&nbsp;</td>
+				
+					<td >Caithness Long Island Energy Center&nbsp;</td>
+				
+					<td >56234&nbsp;</td>
+				
+					<td >0001&nbsp;</td>
+				
+					<td >NY&nbsp;</td>
+				
+					<td >1472204426&nbsp;</td>
+				
+					<td >01&#x2f;01&#x2f;2015 - 12&#x2f;31&#x2f;2017&nbsp;</td>
+				
+					<td >2,157.30&nbsp;</td>
+				
+					<td >2,158&nbsp;</td>
+				
+					<td >273,947.650&nbsp;</td>
+				
+					<td >4,609,677&nbsp;</td>
+				
+					<td >0.000&nbsp;</td>
+				
+					<td >Complete&nbsp;</td>
+				
+			</tr>
+			
+				<tr valign="baseline">
+			
+					<td >2009&nbsp;</td>
+				
+					<td >1&nbsp;</td>
+				
+					<td >Empire Generating Company LLC&nbsp;</td>
+				
+					<td >56259&nbsp;</td>
+				
+					<td >CT-1, CT-2&nbsp;</td>
+				
+					<td >NY&nbsp;</td>
+				
+					<td >4381400052&nbsp;</td>
+				
+					<td >01&#x2f;01&#x2f;2009 - 12&#x2f;31&#x2f;2011&nbsp;</td>
+				
+					<td >Not Operating&nbsp;</td>
+				
+					<td >Not Operating&nbsp;</td>
+				
+					<td >Not Operating&nbsp;</td>
+				
+					<td >Not Operating&nbsp;</td>
+				
+					<td >Not Operating&nbsp;</td>
+				
+					<td >Complete&nbsp;</td>
+				
+			</tr>
+			
+				<tr valign="baseline">
+			
+					<td >2009&nbsp;</td>
+				
+					<td >2&nbsp;</td>
+				
+					<td >Empire Generating Company LLC&nbsp;</td>
+				
+					<td >56259&nbsp;</td>
+				
+					<td >CT-1, CT-2&nbsp;</td>
+				
+					<td >NY&nbsp;</td>
+				
+					<td >4381400052&nbsp;</td>
+				
+					<td >01&#x2f;01&#x2f;2009 - 12&#x2f;31&#x2f;2011&nbsp;</td>
+				
+					<td >Not Operating&nbsp;</td>
+				
+					<td >Not Operating&nbsp;</td>
+				
+					<td >Not Operating&nbsp;</td>
+				
+					<td >Not Operating&nbsp;</td>
+				
+					<td >Not Operating&nbsp;</td>
+				
+					<td >Complete&nbsp;</td>
+				
+			</tr>
+			
+				<tr valign="baseline">
+			
+					<td >2009&nbsp;</td>
+				
+					<td >3&nbsp;</td>
+				
+					<td >Empire Generating Company LLC&nbsp;</td>
+				
+					<td >56259&nbsp;</td>
+				
+					<td >CT-1, CT-2&nbsp;</td>
+				
+					<td >NY&nbsp;</td>
+				
+					<td >4381400052&nbsp;</td>
+				
+					<td >01&#x2f;01&#x2f;2009 - 12&#x2f;31&#x2f;2011&nbsp;</td>
+				
+					<td >Not Operating&nbsp;</td>
+				
+					<td >Not Operating&nbsp;</td>
+				
+					<td >Not Operating&nbsp;</td>
+				
+					<td >Not Operating&nbsp;</td>
+				
+					<td >Not Operating&nbsp;</td>
+				
+					<td >Complete&nbsp;</td>
+				
+			</tr>
+			
+				<tr valign="baseline">
+			
+					<td >2009&nbsp;</td>
+				
+					<td >4&nbsp;</td>
+				
+					<td >Empire Generating Company LLC&nbsp;</td>
+				
+					<td >56259&nbsp;</td>
+				
+					<td >CT-1, CT-2&nbsp;</td>
+				
+					<td >NY&nbsp;</td>
+				
+					<td >4381400052&nbsp;</td>
+				
+					<td >01&#x2f;01&#x2f;2009 - 12&#x2f;31&#x2f;2011&nbsp;</td>
+				
+					<td >Not Operating&nbsp;</td>
+				
+					<td >Not Operating&nbsp;</td>
+				
+					<td >Not Operating&nbsp;</td>
+				
+					<td >Not Operating&nbsp;</td>
+				
+					<td >Not Operating&nbsp;</td>
+				
+					<td >Complete&nbsp;</td>
+				
+			</tr>
+			
+				<tr valign="baseline">
+			
+					<td >2010&nbsp;</td>
+				
+					<td >1&nbsp;</td>
+				
+					<td >Empire Generating Company LLC&nbsp;</td>
+				
+					<td >56259&nbsp;</td>
+				
+					<td >CT-1, CT-2&nbsp;</td>
+				
+					<td >NY&nbsp;</td>
+				
+					<td >4381400052&nbsp;</td>
+				
+					<td >01&#x2f;01&#x2f;2009 - 12&#x2f;31&#x2f;2011&nbsp;</td>
+				
+					<td >Not Operating&nbsp;</td>
+				
+					<td >Not Operating&nbsp;</td>
+				
+					<td >Not Operating&nbsp;</td>
+				
+					<td >Not Operating&nbsp;</td>
+				
+					<td >Not Operating&nbsp;</td>
+				
+					<td >Complete&nbsp;</td>
+				
+			</tr>
+			
+				<tr valign="baseline">
+			
+					<td >2010&nbsp;</td>
+				
+					<td >2&nbsp;</td>
+				
+					<td >Empire Generating Company LLC&nbsp;</td>
+				
+					<td >56259&nbsp;</td>
+				
+					<td >CT-1, CT-2&nbsp;</td>
+				
+					<td >NY&nbsp;</td>
+				
+					<td >4381400052&nbsp;</td>
+				
+					<td >01&#x2f;01&#x2f;2009 - 12&#x2f;31&#x2f;2011&nbsp;</td>
+				
+					<td >0.00&nbsp;</td>
+				
+					<td >0&nbsp;</td>
+				
+					<td >0.000&nbsp;</td>
+				
+					<td >0&nbsp;</td>
+				
+					<td >0.000&nbsp;</td>
+				
+					<td >Complete&nbsp;</td>
+				
+			</tr>
+			
+				<tr valign="baseline">
+			
+					<td >2010&nbsp;</td>
+				
+					<td >3&nbsp;</td>
+				
+					<td >Empire Generating Company LLC&nbsp;</td>
+				
+					<td >56259&nbsp;</td>
+				
+					<td >CT-1, CT-2&nbsp;</td>
+				
+					<td >NY&nbsp;</td>
+				
+					<td >4381400052&nbsp;</td>
+				
+					<td >01&#x2f;01&#x2f;2009 - 12&#x2f;31&#x2f;2011&nbsp;</td>
+				
+					<td >1,388.54&nbsp;</td>
+				
+					<td >1,393&nbsp;</td>
+				
+					<td >135,683.206&nbsp;</td>
+				
+					<td >2,283,151&nbsp;</td>
+				
+					<td >0.000&nbsp;</td>
+				
+					<td >Complete&nbsp;</td>
+				
+			</tr>
+			
+		</tbody>
+		
+		</table></div></td></tr>
+
+		
+			<tr>
+				<td class="fuse" align="left"><span class="fuse"><b>
+        <nobr><a class="buttonTextLo" onmouseover="buttonTextHi(this);" title="&lt;" onmouseout="buttonTextLo(this);" onclick="document.prevForm.submit();return false;" href="javascript:void(0);" id="prevButton">&lt;</a></nobr>
+                <div style="display:none;"><form name="prevForm" action="index.cfm" method="post" target="_self"><input type="hidden" name="fuseaction" value="reportsV2.quarterly_emissions_rpt_output"><input type="hidden" name="REPORTTYPE" value="F"><input type="hidden" name="FILTER_BEGINNING_YEAR" value="2009"><input type="hidden" name="FILTER_ENDING_YEAR" value="2015"><input type="hidden" name="FILTER_BEGINNING_QUARTER" value="1"><input type="hidden" name="FILTER_ENDING_QUARTER" value="4"><input type="hidden" name="SRC_NUMBER" value=""><input type="hidden" name="SRC_ID" value="TSlOP19UOlZTIyU9I19cTFJHPCs+XlAnIzJPWylULSc1M0xENl9KVl8jSlc/U1xQU1EgW1xeJFhVU10/LgpNVSBDK1FAWkpSIFwqU0U/NFpKRjMjIFssUVo7VzM6W1hKRVQhOi9fTVQsRSsiL18tXiheV0ssNT0hTFBfCk03TE05I0xWMyNYRylSRjMxK0A8KSFOVzVbTlM/JiRCN1U+PzVbL0ciVydXSlRPRzMrX1MuWC9RPlNPR18KTSpNX0VRPC8pXyhLMydAOyJbX10xN108NEBOXytLPDNOVjI/M1dHVC0gTSo/UyxfRlBOXzJXXFtfUFw3PgpNX00ySTVeLzBCL0ZKUjw4NzpNXCJbOldBU0FXKyUsQDspPT9fMiZTMlBAKyxKKk9XIz47WVJPPyJbOk5LCk1XLCtaVUVNSCIvTVJQRC8tSj0vNyJAVEIjVURRUi4zWCstSypTKCpPRDw/O19cKk4qXCszUl0yQ1JNO1UKTVlMXzdaKlA3UiJbLlk8NzUqRVdcXjxdNltcVC9UQlEyVURbN14kPD9RQT9dXl0vUFldOyhUQCQ6UiBcPgpNUCEnNlpKTEkzWUNCUlg0S0kgUzJQTkwlMTxXMlIgRU8hJDYzU19cK1M8XyUlXF8nID9ANSIgTytSITMyCk1ZLTMmXik7MV9EXT83Xls7VT48JyEvXypVX0cnJ1InVlsgM1tQXTciVV43IzFNTDEwTkdDUlBDQFlFMkwKTVhCRSc3PkwsQ0xTIV4gPy4hTCpTNUw7LkdcMlBYREU2USxbN1IgNC1BTE9fN1hbLlAgLDBFTF03KV5bQQpNX0pPP1EvWisjXC1fJ1hJMlosREtdJD0ySzxXIlZaMzsqQT5OSFAsV0FfW0lQVyc6UiBUKFoxWyNKXE9eCk0gJzAzWyBPIyhdOylfL189NyJQV1JcN0VTPSMwW0BbOV9dI1VfXTwgUU9YNUcuSzQnLjtQWyArKlpMRzUKTSVfWyJSIEgzUyxUOFVQOjtTTU8nV10hKldcRy8yTD81XkxLXSJNID8wRlsjWU4/Q1VaOzcrPzJVUkBfRgpNS1xNM1UvXCxXVEEzKywsN1ZVXCpCLEU8VjQnMldNVE4zPks/MkBcLV9MPScmR0xLJlI8OlFAW05VTFpRCk0yJ0UqX1wjOFldOy4gUD81Jy0/I1hQQCBTPD8qJV4/O19CXD5bXEspUVwrSiEyVzpRP10vUExdKTdBMk4KTVVGJFUgRVwiUSwwNTNHW15XXFIyUF9eLlsuS18gX1NaNzwmOSFCRzpTLEgxQ04vT1ddKDVfXVRPUTFVVQpNIF5LOCBMPz5bTDsuUy1TO1tMPC5TIFs/XkovKChcUz9BOD0jI1wrI1MgPy9fUl8nVVxVLjM8SzZQQlc9Ck1SIEtCQ1w8IjcqXFZSSjtOVT9PU1NNPCVVOlBWX09fLyUsLDNXTkcvUExIO1NYWyJRUjAlKSxcIkE6RzAKTVYsXE5RRkhTM1gsL1k8LzBXLE88M11AI1ZCVygpLDc+Xi1cKkFfLFJfPCs2WiVfVSNOO09bT1crUiJcLwpNUywrQFBPUyxbKlQjSEArPjRYICZbPDxPXl5HNks8XDQ7Xl8/UEhbPVJMPzVQXFIiITBfU1MgPShQRTg7Ck0iLFwoJyE7O1c8MjhRTiAzVV1dKCs9Tz9DTk0pK1BbOlMgUk9VMj5VMipcLUtMR0MhTV00Vy9cNSFKTCcKTVosIlMhTVc/RzxPUENcUzchUDAyU1xNIkctWlU1IFddUlVeVyMgXy9WQE06U0E7LlM+QzZeXC9MVDBHMQpNUEBfO0hRIz9TXlIlUixbQyM+Xz4gLDBbQE9SSVFQSz8xQFVbU0EvUlcvW0gkRD07QF1cPSIvSDJZXE0/Ck0gVEkyU1xPIyMoVUdXPEQqNlw1NyJNOyYxPSJQWFgrRlFOODkrPkw6UkxLU1NaVE8rPEdDU11PTyAsUyEKTStMKkxYUF8zUE1fIlQ8RiUrTFQuVzxAN0tcWy5eRUsyUEFLOVFQPD5VXUsjPixfMUNcXy1UIE8nXyE6TwpNUzY/U0tdP1lLPCdbM0FTN1UxSzJXQEQ+MFhfUyNAUyVeRDMrWi1bXidHRzZfRTs8VVRMM1ciL0hXWSoxCk0nJFI+QipbM0osVydaQSAqW01NXldeJyhDTD8pUj00IEJMXkpZLzdAX1g8JlNPOSMjJEQkPjxTVSE+RCQKTVBUMzJVPFcuUlA+PlFOWyIiXFdDU14tTCFYUzpTXEUrVi9FM1BOXEIjMCczM0xLX1VFPTcyLCstK0pbVQorUiQ7TSJMX1M+TTwpMz9cIAo="><input type="hidden" name="REGION_ID" value="0"><input type="hidden" name="SRC_NAME" value=""><input type="hidden" name="page" value="46"></form></div>
+            4601 - 4700 of 4780 <nobr><a href="javascript:void(0);" onclick="document.nextForm.submit();return false;" id="nextButton" class="buttonTextLo" title="&gt;" onmouseover="buttonTextHi(this);" onmouseout="buttonTextLo(this);">&gt;</a></nobr>
+                <div style="display:none;"><form name="nextForm" action="index.cfm" method="post" target="_self"><input type="hidden" name="fuseaction" value="reportsV2.quarterly_emissions_rpt_output"><input type="hidden" name="REPORTTYPE" value="F"><input type="hidden" name="FILTER_BEGINNING_YEAR" value="2009"><input type="hidden" name="FILTER_ENDING_YEAR" value="2015"><input type="hidden" name="FILTER_BEGINNING_QUARTER" value="1"><input type="hidden" name="FILTER_ENDING_QUARTER" value="4"><input type="hidden" name="SRC_NUMBER" value=""><input type="hidden" name="SRC_ID" value="TSlOP19UOlZTIyU9I19cTFJHPCs+XlAnIzJPWylULSc1M0xENl9KVl8jSlc/U1xQU1EgW1xeJFhVU10/LgpNVSBDK1FAWkpSIFwqU0U/NFpKRjMjIFssUVo7VzM6W1hKRVQhOi9fTVQsRSsiL18tXiheV0ssNT0hTFBfCk03TE05I0xWMyNYRylSRjMxK0A8KSFOVzVbTlM/JiRCN1U+PzVbL0ciVydXSlRPRzMrX1MuWC9RPlNPR18KTSpNX0VRPC8pXyhLMydAOyJbX10xN108NEBOXytLPDNOVjI/M1dHVC0gTSo/UyxfRlBOXzJXXFtfUFw3PgpNX00ySTVeLzBCL0ZKUjw4NzpNXCJbOldBU0FXKyUsQDspPT9fMiZTMlBAKyxKKk9XIz47WVJPPyJbOk5LCk1XLCtaVUVNSCIvTVJQRC8tSj0vNyJAVEIjVURRUi4zWCstSypTKCpPRDw/O19cKk4qXCszUl0yQ1JNO1UKTVlMXzdaKlA3UiJbLlk8NzUqRVdcXjxdNltcVC9UQlEyVURbN14kPD9RQT9dXl0vUFldOyhUQCQ6UiBcPgpNUCEnNlpKTEkzWUNCUlg0S0kgUzJQTkwlMTxXMlIgRU8hJDYzU19cK1M8XyUlXF8nID9ANSIgTytSITMyCk1ZLTMmXik7MV9EXT83Xls7VT48JyEvXypVX0cnJ1InVlsgM1tQXTciVV43IzFNTDEwTkdDUlBDQFlFMkwKTVhCRSc3PkwsQ0xTIV4gPy4hTCpTNUw7LkdcMlBYREU2USxbN1IgNC1BTE9fN1hbLlAgLDBFTF03KV5bQQpNX0pPP1EvWisjXC1fJ1hJMlosREtdJD0ySzxXIlZaMzsqQT5OSFAsV0FfW0lQVyc6UiBUKFoxWyNKXE9eCk0gJzAzWyBPIyhdOylfL189NyJQV1JcN0VTPSMwW0BbOV9dI1VfXTwgUU9YNUcuSzQnLjtQWyArKlpMRzUKTSVfWyJSIEgzUyxUOFVQOjtTTU8nV10hKldcRy8yTD81XkxLXSJNID8wRlsjWU4/Q1VaOzcrPzJVUkBfRgpNS1xNM1UvXCxXVEEzKywsN1ZVXCpCLEU8VjQnMldNVE4zPks/MkBcLV9MPScmR0xLJlI8OlFAW05VTFpRCk0yJ0UqX1wjOFldOy4gUD81Jy0/I1hQQCBTPD8qJV4/O19CXD5bXEspUVwrSiEyVzpRP10vUExdKTdBMk4KTVVGJFUgRVwiUSwwNTNHW15XXFIyUF9eLlsuS18gX1NaNzwmOSFCRzpTLEgxQ04vT1ddKDVfXVRPUTFVVQpNIF5LOCBMPz5bTDsuUy1TO1tMPC5TIFs/XkovKChcUz9BOD0jI1wrI1MgPy9fUl8nVVxVLjM8SzZQQlc9Ck1SIEtCQ1w8IjcqXFZSSjtOVT9PU1NNPCVVOlBWX09fLyUsLDNXTkcvUExIO1NYWyJRUjAlKSxcIkE6RzAKTVYsXE5RRkhTM1gsL1k8LzBXLE88M11AI1ZCVygpLDc+Xi1cKkFfLFJfPCs2WiVfVSNOO09bT1crUiJcLwpNUywrQFBPUyxbKlQjSEArPjRYICZbPDxPXl5HNks8XDQ7Xl8/UEhbPVJMPzVQXFIiITBfU1MgPShQRTg7Ck0iLFwoJyE7O1c8MjhRTiAzVV1dKCs9Tz9DTk0pK1BbOlMgUk9VMj5VMipcLUtMR0MhTV00Vy9cNSFKTCcKTVosIlMhTVc/RzxPUENcUzchUDAyU1xNIkctWlU1IFddUlVeVyMgXy9WQE06U0E7LlM+QzZeXC9MVDBHMQpNUEBfO0hRIz9TXlIlUixbQyM+Xz4gLDBbQE9SSVFQSz8xQFVbU0EvUlcvW0gkRD07QF1cPSIvSDJZXE0/Ck0gVEkyU1xPIyMoVUdXPEQqNlw1NyJNOyYxPSJQWFgrRlFOODkrPkw6UkxLU1NaVE8rPEdDU11PTyAsUyEKTStMKkxYUF8zUE1fIlQ8RiUrTFQuVzxAN0tcWy5eRUsyUEFLOVFQPD5VXUsjPixfMUNcXy1UIE8nXyE6TwpNUzY/U0tdP1lLPCdbM0FTN1UxSzJXQEQ+MFhfUyNAUyVeRDMrWi1bXidHRzZfRTs8VVRMM1ciL0hXWSoxCk0nJFI+QipbM0osVydaQSAqW01NXldeJyhDTD8pUj00IEJMXkpZLzdAX1g8JlNPOSMjJEQkPjxTVSE+RCQKTVBUMzJVPFcuUlA+PlFOWyIiXFdDU14tTCFYUzpTXEUrVi9FM1BOXEIjMCczM0xLX1VFPTcyLCstK0pbVQorUiQ7TSJMX1M+TTwpMz9cIAo="><input type="hidden" name="REGION_ID" value="0"><input type="hidden" name="SRC_NAME" value=""><input type="hidden" name="page" value="48"></form></div>
+            
+        </b></span>&nbsp;</td>
+				<td class="fuse" align="right">&nbsp;<nobr><a class="buttonTextLo" id="printButton1" onmouseout="buttonTextLo(this);" onmouseover="buttonTextHi(this);" onclick="document.expForm1.submit();return false;" href="javascript:void(0);">Export Data</a></nobr>
+			<div style="display:none;"><form name="expForm1" action="index.cfm" method="post" target="_self"><input type="hidden" name="fuseaction" value="reportsV2.quarterly_emissions_rpt_output"><input type="hidden" name="isexport" value="true"><input type="hidden" name="REPORTTYPE" value="F"><input type="hidden" name="FILTER_BEGINNING_YEAR" value="2009"><input type="hidden" name="FILTER_ENDING_YEAR" value="2015"><input type="hidden" name="FILTER_BEGINNING_QUARTER" value="1"><input type="hidden" name="FILTER_ENDING_QUARTER" value="4"><input type="hidden" name="SRC_NUMBER" value=""><input type="hidden" name="SRC_ID" value="TSlOP19UOlZTIyU9I19cTFJHPCs+XlAnIzJPWylULSc1M0xENl9KVl8jSlc/U1xQU1EgW1xeJFhVU10/LgpNVSBDK1FAWkpSIFwqU0U/NFpKRjMjIFssUVo7VzM6W1hKRVQhOi9fTVQsRSsiL18tXiheV0ssNT0hTFBfCk03TE05I0xWMyNYRylSRjMxK0A8KSFOVzVbTlM/JiRCN1U+PzVbL0ciVydXSlRPRzMrX1MuWC9RPlNPR18KTSpNX0VRPC8pXyhLMydAOyJbX10xN108NEBOXytLPDNOVjI/M1dHVC0gTSo/UyxfRlBOXzJXXFtfUFw3PgpNX00ySTVeLzBCL0ZKUjw4NzpNXCJbOldBU0FXKyUsQDspPT9fMiZTMlBAKyxKKk9XIz47WVJPPyJbOk5LCk1XLCtaVUVNSCIvTVJQRC8tSj0vNyJAVEIjVURRUi4zWCstSypTKCpPRDw/O19cKk4qXCszUl0yQ1JNO1UKTVlMXzdaKlA3UiJbLlk8NzUqRVdcXjxdNltcVC9UQlEyVURbN14kPD9RQT9dXl0vUFldOyhUQCQ6UiBcPgpNUCEnNlpKTEkzWUNCUlg0S0kgUzJQTkwlMTxXMlIgRU8hJDYzU19cK1M8XyUlXF8nID9ANSIgTytSITMyCk1ZLTMmXik7MV9EXT83Xls7VT48JyEvXypVX0cnJ1InVlsgM1tQXTciVV43IzFNTDEwTkdDUlBDQFlFMkwKTVhCRSc3PkwsQ0xTIV4gPy4hTCpTNUw7LkdcMlBYREU2USxbN1IgNC1BTE9fN1hbLlAgLDBFTF03KV5bQQpNX0pPP1EvWisjXC1fJ1hJMlosREtdJD0ySzxXIlZaMzsqQT5OSFAsV0FfW0lQVyc6UiBUKFoxWyNKXE9eCk0gJzAzWyBPIyhdOylfL189NyJQV1JcN0VTPSMwW0BbOV9dI1VfXTwgUU9YNUcuSzQnLjtQWyArKlpMRzUKTSVfWyJSIEgzUyxUOFVQOjtTTU8nV10hKldcRy8yTD81XkxLXSJNID8wRlsjWU4/Q1VaOzcrPzJVUkBfRgpNS1xNM1UvXCxXVEEzKywsN1ZVXCpCLEU8VjQnMldNVE4zPks/MkBcLV9MPScmR0xLJlI8OlFAW05VTFpRCk0yJ0UqX1wjOFldOy4gUD81Jy0/I1hQQCBTPD8qJV4/O19CXD5bXEspUVwrSiEyVzpRP10vUExdKTdBMk4KTVVGJFUgRVwiUSwwNTNHW15XXFIyUF9eLlsuS18gX1NaNzwmOSFCRzpTLEgxQ04vT1ddKDVfXVRPUTFVVQpNIF5LOCBMPz5bTDsuUy1TO1tMPC5TIFs/XkovKChcUz9BOD0jI1wrI1MgPy9fUl8nVVxVLjM8SzZQQlc9Ck1SIEtCQ1w8IjcqXFZSSjtOVT9PU1NNPCVVOlBWX09fLyUsLDNXTkcvUExIO1NYWyJRUjAlKSxcIkE6RzAKTVYsXE5RRkhTM1gsL1k8LzBXLE88M11AI1ZCVygpLDc+Xi1cKkFfLFJfPCs2WiVfVSNOO09bT1crUiJcLwpNUywrQFBPUyxbKlQjSEArPjRYICZbPDxPXl5HNks8XDQ7Xl8/UEhbPVJMPzVQXFIiITBfU1MgPShQRTg7Ck0iLFwoJyE7O1c8MjhRTiAzVV1dKCs9Tz9DTk0pK1BbOlMgUk9VMj5VMipcLUtMR0MhTV00Vy9cNSFKTCcKTVosIlMhTVc/RzxPUENcUzchUDAyU1xNIkctWlU1IFddUlVeVyMgXy9WQE06U0E7LlM+QzZeXC9MVDBHMQpNUEBfO0hRIz9TXlIlUixbQyM+Xz4gLDBbQE9SSVFQSz8xQFVbU0EvUlcvW0gkRD07QF1cPSIvSDJZXE0/Ck0gVEkyU1xPIyMoVUdXPEQqNlw1NyJNOyYxPSJQWFgrRlFOODkrPkw6UkxLU1NaVE8rPEdDU11PTyAsUyEKTStMKkxYUF8zUE1fIlQ8RiUrTFQuVzxAN0tcWy5eRUsyUEFLOVFQPD5VXUsjPixfMUNcXy1UIE8nXyE6TwpNUzY/U0tdP1lLPCdbM0FTN1UxSzJXQEQ+MFhfUyNAUyVeRDMrWi1bXidHRzZfRTs8VVRMM1ciL0hXWSoxCk0nJFI+QipbM0osVydaQSAqW01NXldeJyhDTD8pUj00IEJMXkpZLzdAX1g8JlNPOSMjJEQkPjxTVSE+RCQKTVBUMzJVPFcuUlA+PlFOWyIiXFdDU14tTCFYUzpTXEUrVi9FM1BOXEIjMCczM0xLX1VFPTcyLCstK0pbVQorUiQ7TSJMX1M+TTwpMz9cIAo="><input type="hidden" name="REGION_ID" value="0"><input type="hidden" name="SRC_NAME" value=""><input type="hidden" name="export_grid_number" value="1"></form></div> </td>
+			</tr>
+			
+				<tr>
+				
+					<td class="fuse" align="left">
+	</br>
+	</td>
+				</tr>
+			
+		</table>
+	<br  />
+
+	    
+    </div>
+    <br clear="All" />
+    
+  
+    <br clear="All" />
+    <div id="footer">
+     <img src="image/layout/_rggi/rggi-logo-new.gif"> 
+     <br />
+     RGGI Inc. is a nonprofit corporation created to provide technical and administrative services to the Regional Greenhouse Gas Initiative CO<sub>2</sub> budget trading programs of Connecticut, Delaware, Maine, Maryland, Massachusetts, New Hampshire, New York, Rhode Island and Vermont.
+    </div>
+    
+
+<br  />
+
+
+</body>
+</html> 
