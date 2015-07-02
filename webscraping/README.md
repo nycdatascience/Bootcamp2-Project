@@ -1,7 +1,7 @@
 # Web Scraping Project
 
 + [Nico - RGGI Carbon Cap and Trade](./Nico/nicoWebScraper.ipynb)
-
++ [Xavier - Fresh Direct](./FreshDirect003.ipynb)
 
 # Notice to Students
 
