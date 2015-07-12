@@ -1,7 +1,7 @@
 # Web Scraping Project
 
 + [Nico - RGGI Carbon Cap and Trade](./Nico/nicoWebScraper.ipynb)
-+ [Xavier - Fresh Direct](./FreshDirect003.ipynb)
++ [Xavier - Best values in grocery shopping (Fresh Direct, C-Town, Keyfood)](./FreshDirect003.ipynb)
 + [Fangzhou - Okcupid Scraper (Who are pickier? Who are lying? Men or Women?)](https://github.com/funjo/okcupid_scraper)
 
 # Notice to Students
