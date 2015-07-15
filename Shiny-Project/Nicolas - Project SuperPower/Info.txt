@@ -1,0 +1,10 @@
+eGRID
+Data source:
+- EPA CAMD
+- EIA-906 power plant prodution pre 2000
+http://www.eia.gov/electricity/data/eia923/eia906u.html
+- EIA-923
+
+eia860 power plant location and planned new build/closure
+
+http://www.eia.gov/electricity/data/eia860/index.html
