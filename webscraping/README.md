@@ -3,6 +3,8 @@
 + [Nico - RGGI Carbon Cap and Trade](./Nico/nicoWebScraper.ipynb)
 + [Xavier - Best values in grocery shopping (Fresh Direct, C-Town, Keyfood)](./FreshDirect003.ipynb)
 + [Fangzhou - Okcupid Scraper (Who are pickier? Who are lying? Men or Women?)](https://github.com/funjo/okcupid_scraper)
++ [Claire - Citylab.com](./Claire/webscarping_Claire.ipynb)
++ [Sumanth - ](Sumanth/Reddy_NBA_0622_v4_boxplot_cleanCode.ipynb)
 
 # Notice to Students
 
