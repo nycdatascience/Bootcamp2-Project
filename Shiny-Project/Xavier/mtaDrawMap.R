@@ -32,7 +32,7 @@ drawmap <- function(){
   library(dplyr)
   
   subways=c(1:7,"A","B","C","D","E","F","G","J","L","M","N","Q","R")
-  shapesbuses = allshapesbuses #filter(allshapesbuses, origin %in% c('shapesmanhattan','shapesbrooklyn','shapesbronx'))
+  shapesbuses = allshapesbuses #filter(allshapesbuses, origin %in% c('shapesstatenisland'))
   
 
   
