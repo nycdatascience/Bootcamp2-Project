@@ -67,7 +67,7 @@ shinyUI(fluidPage(
   ),
   hr(),
   h6('DISCLAIMER: The statement and analysis in this website is provided as general information and for
-     illustrative purpose only. This app does not intend to provide investing advice. The author may hold positions in stocks, currencies and 
+     illustrative purpose only. This app does not intend to provide invesment advice. The author may hold positions in stocks, currencies and 
      industries discussed here. You understand and acknowledge that there is a very high 
      degree of risk involved in trading securities and/or currencies. The author assumes no 
      responsibility or liability for your trading and investment results.')
