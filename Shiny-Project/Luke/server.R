@@ -81,7 +81,10 @@ shinyServer(function(input, output) {
       c_rst = rep(1, lll); for(i in 2: lll){c_rst[i]= c_rst[i-1]*d_ret[i]}
       strategy$d_ret= xts(d_ret, order.by= index(strategy))
       strategy$result= xts(c_rst, order.by= index(strategy))
-      show(addTA(strategy$result, legend='Cumulative Return: ')) 
+      a= round(strategy$result[[lll]], digit=2)
+      a= 100*(a-1)
+      legend= paste('Cumulative Return: ', a, '%', sep='')
+      show(addTA(strategy$result, legend= legend) )
     }
            
         #(data, n=input$BB_win, sd= input$sd, 
