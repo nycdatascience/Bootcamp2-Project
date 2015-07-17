@@ -73,7 +73,7 @@ graph_trip_time_subway<-function(line,timeinf,timesup,datafile,delays,direction)
   library(ggplot2)
   if (delays==FALSE){
     g = ggplot(mathist019, aes(TmpSys,tempsroulage, group=Route,color=Route)) + 
-      geom_point() +
+      geom_point(alpha=.7) +
       coord_cartesian(ylim=c(0,100)) +
       geom_smooth(method="auto") +
       geom_rug() +
@@ -84,7 +84,7 @@ graph_trip_time_subway<-function(line,timeinf,timesup,datafile,delays,direction)
       scale_x_chron(format="%H:%M")
   } else {
     g = ggplot(mathist019, aes(TmpSys,tempsroulage)) + 
-      geom_point(aes(group=Route,color=Route)) +
+      geom_point(aes(group=Route,color=Route),alpha=.7) +
       coord_cartesian(ylim=c(0,100)) +
       geom_smooth(aes(group=Route,color=Route),method="auto") +
       geom_rug(aes(group=Route,color=Route)) +
