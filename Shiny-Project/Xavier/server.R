@@ -71,7 +71,11 @@ shinyServer(
     
     ##3. Real time MTA Map
     
-    fileData <- reactiveFileReader(1000, session, 'data/mtaRealTime.txt',read.csv)
+    library(rPython)
+    python.load("mtaRealTime.py")
+    fileData <- python.get("loopdwlmta(1)")
+    
+    #fileData <- reactiveFileReader(1000, session, 'data/mtaRealTime.txt',read.csv)
     filetmp <- reactive({fileData()
                          read.csv("data/mtaRealTime.txt",header=FALSE,stringsAsFactors = FALSE)})
     reatTime_direct <- reactive({input$real_time_NS})
