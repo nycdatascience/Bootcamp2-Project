@@ -6,6 +6,7 @@ import datetime
 from bs4 import BeautifulSoup
 import requests
 import re
+import json
 
 ### save in file definition
 def cleanfile():
@@ -81,7 +82,7 @@ def loopdwlmta(x):
                     #print tripcomplete, type(tripcomplete)
                     tripcomplstr = ','.join([str(i) for i in tripcomplete])
                     #savefile(tripcomplstr)
-                    print tripcomplstr;
+                    print tripcomplstr
 
                     j+=1
 

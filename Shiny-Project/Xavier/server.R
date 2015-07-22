@@ -71,16 +71,20 @@ shinyServer(
     
     ##3. Real time MTA Map
     
-    library(rPython)
-    python.load("mtaRealTime.py")
-    fileData <- python.get("loopdwlmta(1)")
+    fileData <- system("/Users/andrew/anaconda/bin/python mtaRealTime.py", intern=TRUE)
+    tester <- sapply(fileData,function (x) {strsplit(x,split = ",")} )
+    df <- as.data.frame(matrix(ncol = 8))
+    for(i in 1:length(tester)) {
+      df <- rbind(df,tester[[i]])
+    }
+    df <- df[-1,]
     
     #fileData <- reactiveFileReader(1000, session, 'data/mtaRealTime.txt',read.csv)
-    filetmp <- reactive({fileData()
-                         read.csv("data/mtaRealTime.txt",header=FALSE,stringsAsFactors = FALSE)})
+    #filetmp <- reactive({fileData()
+    #                     read.csv("data/mtaRealTime.txt",header=FALSE,stringsAsFactors = FALSE)})
     reatTime_direct <- reactive({input$real_time_NS})
     reatTime_line <- reactive({input$real_time_line})
-    output$realTimeMap <- renderPlot({graph_real_time(filetmp(),reatTime_line(),reatTime_direct())})
+    output$realTimeMap <- renderPlot({graph_real_time(df,reatTime_line(),reatTime_direct())})
     
     
   }
