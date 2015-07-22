@@ -4,6 +4,7 @@ library(RColorBrewer)
 library(scales)
 library(lattice)
 library(dplyr)
+library(DT)
 
 draw <- vc
 
