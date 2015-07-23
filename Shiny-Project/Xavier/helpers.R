@@ -150,9 +150,6 @@ routes003 = filter(routes002, route_id %in% subwayline)
 stops002 = filter(stops,parent_station=='')
 stops003 = mutate(stops002,route_id = substr(stop_id,1,1))
 stops005 = filter(stops003, route_id %in% subwayline)
-stops002 = as.data.frame(stops002)
-stops003 = as.data.frame(stops003)
-stops005 = as.data.frame(stops005)
 ## => ready for print using routes003
 
 ## prepare stops for inner joint with real time data:
