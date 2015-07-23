@@ -48,7 +48,7 @@ shinyUI(
                         value = c(0,24))
 #             helpText("Subway portion studied: Bronx - downtown Manhattan."), br(),
 #             helpText("Line 1: Local, 36 stations,",br(),
-#                      "Line 4: Express, 16 stations."),br(),helpText("What line is faster ? What line is more reliable ?")
+#                      "Line 4: Express, 22 stations."),br(),helpText("What line is faster ? What line is more reliable ?")
           ),
             
     
