@@ -105,6 +105,10 @@ graph_real_time<-function(file,subwayline,realTimeDirection){
 #subwayline = c(1)
 #realTimeDirection="N"
   
+  ##############################
+  #   Change the direct path   #
+  ##############################
+  
   ## modified script for nyc data science server
   fileData <- system("/usr/bin/python mtaRealTime.py", intern=TRUE)
   tester <- sapply(fileData,function (x) {strsplit(x,split = ",")} )
