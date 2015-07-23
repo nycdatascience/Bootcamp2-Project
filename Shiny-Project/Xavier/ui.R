@@ -26,7 +26,7 @@ shinyUI(
             helpText("Please allow 30 to 45s for loading."),
             helpText("Subway portion studied: Bronx to Lower Manhattan."), br(),
             helpText("Line 1: Local, 36 stations,",br(),
-                     "Line 4: Express, 16 stations."),br(),helpText(h3("1. What line is faster ?", br(), "2. What line is more reliable ?")),
+                     "Line 4: Express, 22 stations."),br(),helpText(h3("1. What line is faster ?", br(), "2. What line is more reliable ?")),
             ## Analysis of Travel Time      
             radioButtons("analys_subw", 
                          label = h5("Select Subway Line(s):"),
