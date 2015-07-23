@@ -26,7 +26,7 @@ def savefile(listitems):
 def loopdwlmta(x):
 
     #cleanfile realtime txt
-    cleanfile()
+    #cleanfile()
 
     #system time for reference
     tmpSys = datetime.datetime.strftime(datetime.datetime.now(), '%Y-%m-%d %H:%M:%S')
