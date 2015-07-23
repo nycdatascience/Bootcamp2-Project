@@ -10,24 +10,26 @@ library(dplyr)
 library(lubridate)
 library(chron)
 
-## Load historical file of real time data records built using Python.
-mtahist = read.csv("data/mta.txt",header=FALSE,stringsAsFactors = FALSE)
-names(mtahist) <- c('tmpSys','TripId','StartDate','Route','alert','j','stop_id','ArrivalTime','Delays')
-
-## Datafile Setup:
-## Select only first record for each trainId for each time stamp: j==0
-## Add direction N or S 
-## Capture and convert time from date stamps
-## Add col of unique trainID
-mtahist001 = filter(mtahist,j==0)
-mtahist002 = mutate(mtahist001,Direction=substr(mtahist001$stop_id,4,5)) %>%
-  mutate(.,TrainId = paste(TripId,StartDate,sep=""))
-mtahist004 = mutate(mtahist002,ArrivalTime=ifelse(ArrivalTime==0,
-                                                  as.numeric(ymd_hms(mtahist002$tmpSys, tz = "America/New_York")),
-                                                  ArrivalTime))
-mtahist003 = mutate(mtahist004,TmpSys=substr(tmpSys,12,20))
-mtahist003$TmpSys <- chron(times. = mtahist003$TmpSys)
-mtafile_cleaned = mtahist003
+# ## Load historical file of real time data records built using Python.
+# mtahist = read.csv("data/mta.txt",header=FALSE,stringsAsFactors = FALSE)
+# names(mtahist) <- c('tmpSys','TripId','StartDate','Route','alert','j','stop_id','ArrivalTime','Delays')
+# 
+# ## Datafile Setup:
+# ## Select only first record for each trainId for each time stamp: j==0
+# ## Add direction N or S 
+# ## Capture and convert time from date stamps
+# ## Add col of unique trainID
+# mtahist001 = filter(mtahist,j==0)
+# mtahist002 = mutate(mtahist001,Direction=substr(mtahist001$stop_id,4,5)) %>%
+#   mutate(.,TrainId = paste(TripId,StartDate,sep=""))
+# mtahist004 = mutate(mtahist002,ArrivalTime=ifelse(ArrivalTime==0,
+#                                                   as.numeric(ymd_hms(mtahist002$tmpSys, tz = "America/New_York")),
+#                                                   ArrivalTime))
+# mtahist003 = mutate(mtahist004,TmpSys=substr(tmpSys,12,20))
+# mtahist003$TmpSys <- chron(times. = mtahist003$TmpSys)
+# saveRDS(mtahist003, "mtaHistoricalFeed.rds")
+## file was saved in rds format for better results on shiny server
+mtafile_cleaned = readRDS("data/mtaHistoricalFeed.rds")
 
 
 i="ready"
@@ -71,20 +73,18 @@ shinyServer(
     
     ##3. Real time MTA Map
     
-    fileData <- system("/Users/andrew/anaconda/bin/python mtaRealTime.py", intern=TRUE)
-    tester <- sapply(fileData,function (x) {strsplit(x,split = ",")} )
-    df <- as.data.frame(matrix(ncol = 8))
-    for(i in 1:length(tester)) {
-      df <- rbind(df,tester[[i]])
-    }
-    df <- df[-1,]
-    
+    ## original script for my own computer
     #fileData <- reactiveFileReader(1000, session, 'data/mtaRealTime.txt',read.csv)
     #filetmp <- reactive({fileData()
     #                     read.csv("data/mtaRealTime.txt",header=FALSE,stringsAsFactors = FALSE)})
+    
+    ## modified script for nyc data science server
+    autoInvalidate <- reactiveTimer(10000, session)
+    
     reatTime_direct <- reactive({input$real_time_NS})
     reatTime_line <- reactive({input$real_time_line})
-    output$realTimeMap <- renderPlot({graph_real_time(df,reatTime_line(),reatTime_direct())})
+    output$realTimeMap <- renderPlot({autoInvalidate()
+                                      graph_real_time(2,reatTime_line(),reatTime_direct())})
     
     
   }

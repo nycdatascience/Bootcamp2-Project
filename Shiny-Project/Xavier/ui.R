@@ -110,7 +110,7 @@ shinyUI(
         titlePanel("Real Time Map"),
         sidebarLayout(
           sidebarPanel(
-             helpText("The feed is uploaded every 30s using a Python code (see Sources).", br(),br(),"Be Patient!"),
+             helpText("The feed is uploaded every 10s using a Python code (see Sources).", br(),br(),"Be Patient!"),
              radioButtons("real_time_NS", 
                           label = h5("Select Direction:"),
                           choices = list("North" = "N", 

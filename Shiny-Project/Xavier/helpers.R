@@ -39,7 +39,8 @@ graph_trip_time_subway<-function(line,timeinf,timesup,datafile,delays,direction)
                       Route %in% line,
                       stop_id %in% starting_station )
   
-  mathist011 = filter(mtahist010,timesup>chron::hours(mtahist010$TmpSys),timeinf<chron::hours(mtahist010$TmpSys))
+  mathist011 = filter(mtahist010,timesup>chron::hours(mtahist010$TmpSys),
+                                 timeinf<chron::hours(mtahist010$TmpSys))
 
   ## isoler les ID des trains partant entre les 2 dates
   mathist013 = distinct(arrange(mathist011,desc(ArrivalTime)), TrainId)
@@ -103,9 +104,27 @@ graph_real_time<-function(file,subwayline,realTimeDirection){
 
 #subwayline = c(1)
 #realTimeDirection="N"
+  
+  ## modified script for nyc data science server
+  fileData <- system("C:/Anaconda/python mtaRealTime.py", intern=TRUE)
+  tester <- sapply(fileData,function (x) {strsplit(x,split = ",")} )
+  filetxt <- as.data.frame(matrix(ncol = 10))
+  for(i in 1:length(tester)) {
+    filetxt <- rbind(filetxt,tester[[i]])
+  }
+  filetxt <- filetxt[-1,]
+  filetxt = select(filetxt, tmpSys=V1,
+                   TripId=V2,
+                   StartDate=V3,
+                   Route=V4,
+                   alert=V5,
+                   j=V6,
+                   stop_id=V7,
+                   ArrivalTime=V8,
+                   jenesaisquoi=V9)
 
 ## Load real time data feed using Python (launch file mtaRealTime.ipynb in shiny app folder)
-mtaRealTimeRaw = file #read.csv("data/mtaRealTime.txt",header=FALSE,stringsAsFactors = FALSE)
+mtaRealTimeRaw = filetxt #read.csv("data/mtaRealTime.txt",header=FALSE,stringsAsFactors = FALSE)
 names(mtaRealTimeRaw) <- c('tmpSys','TripId','StartDate','Route','alert','j','stop_id','ArrivalTime','Delays')
 
 
