@@ -18,13 +18,14 @@ shinyServer(function(input, output, session) {
   # Plotting treemap of receipts. (Area and Color) = $ amount.
   output$plotr <- renderPlot({
     total = format(sum(receipts[input$r_year]),big.mark=",",scientific=FALSE)
+    receipts[paste0(input$r_year,'abs')] <- abs(receipts[input$o_year])
     treemap(receipts, 
             index = input$r_index, 
-            vSize = input$r_year, 
+            vSize = paste0(input$r_year,'abs'), 
             vColor = input$r_year, 
             palette = 'Greens',
             type = 'value',
-            title = paste('TOTAL ', total))
+            title = paste('TOTAL $', total))
   })
   # Dynamic UI input for selecting subcategories to plot.======
   observe({
@@ -81,7 +82,7 @@ shinyServer(function(input, output, session) {
             vColor = input$o_year, 
             palette = '-RdYlGn',
             type = 'value',
-            title = paste('TOTAL ', total))
+            title = paste('TOTAL $', total))
   })
   # Dynamic UI input for selecting subcategories to plot.======
   observe({
@@ -138,7 +139,7 @@ shinyServer(function(input, output, session) {
             vColor=input$b_year, 
             palette = '-RdYlGn',
             type='value',
-            title = paste('TOTAL', total))
+            title = paste('TOTAL $', total))
   })
   # Dynamic UI input for selecting subcategories to plot.======
   observe({

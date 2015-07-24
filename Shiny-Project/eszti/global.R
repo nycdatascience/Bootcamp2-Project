@@ -1,3 +1,6 @@
+# Pulling in raw data and creating data.frames for each category:
+# outlays, receipts and budget authority.
+
 r_raw <- read.csv('data/receipts.csv', colClasses='character')
 r_nums <- as.data.frame(sapply(r_raw[13:72], FUN = function(x) as.numeric(gsub(",", "", x))*1000))
 receipts <- cbind(r_raw[1:12], r_nums)
@@ -19,6 +22,7 @@ budauth <- cbind(b_raw[1:11], b_nums)
 b_years = grep('^X[1-2][0-9][0-9][0-9]',names(budauth))
 b_indices = grep('.Name|.Budget|.Title|.Category',names(budauth))
 
+# Adjusting for inflation so that each year is shown in 2015 USD amounts.
 i_rate = read.csv('data/inflation.csv', colClasses='numeric')
 i_rate$add1 = i_rate$Inflation.Rate + 1
 mult = function(x) {

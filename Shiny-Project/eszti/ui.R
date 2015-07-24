@@ -4,43 +4,6 @@ shinyUI(fluidPage(
   titlePanel('The US Federal Budget'),
   
   tabsetPanel(
-    tabPanel('Introduction',
-             fluidRow(
-               br(),
-               column(12,
-                      img(src = "motivation.png",height=300,width=400)),
-               column(12,
-                      br(),
-                      br(),
-                      p('Motivation for this project comes from this site:',
-                        a(href='http://www.usgovernmentspending.com/breakdown','usgovernmentspending.com'),
-                        style = 'font-size:15pt;')
-                      ),
-               column(12,
-                      p("Data was taken from the",
-                        a(href='https://github.com/WhiteHouse/2016-budget-data', "White House GitHub"), 
-                        "account in July 2015.",style = "font-size:15pt;")
-                      ),
-               column(12,
-                      p('Inflation data came from',
-                        a(href='http://www.multpl.com/inflation/table','US Inflation Rate per Year.'),
-                        style = 'font-size:15pt;')
-                      ),
-               column(12,
-                      p('Special thanks to',
-                        'Ale, Andrew, Bryan, Jason, Luke, Shu and Xavier',
-                        'for patience and wonderful advice.',
-                        style = 'font-size:15pt;')),
-               column(12,
-                      p('Additional helpful websites',
-                        br(),
-                        a(href='https://www.nationalpriorities.org/budget-basics/federal-budget-101/spending/',
-                          'Budget Basics'),
-                        br(),
-                        a(href='https://www.whitehouse.gov/omb','Office of Management and Budget')))
-             )
-    ),
-    
     tabPanel('Receipts',
       fluidRow(
         column(2, offset = 1,
