@@ -1,9 +1,9 @@
-
 shinyUI(fluidPage(
   
   titlePanel('The US Federal Budget'),
   
-  tabsetPanel(
+  tabsetPanel(id = 'current',
+    
     tabPanel('Receipts',
       fluidRow(
         column(2, offset = 1,
@@ -22,14 +22,15 @@ shinyUI(fluidPage(
                selectInput("r_inSelect", 
                            label = "Select panes",
                            multiple = TRUE,
-                           choices = '') # has to be defined.
+                           choices = '') 
         ),
       submitButton('Submit')
               ),
       plotOutput('plotr'),
       checkboxInput('adjust', 
                     'Adjust below prices for inflation', value = FALSE),
-      plotOutput('plotr_yrs')
+      plotOutput('plotr_yrs'),
+      textOutput('text1')
     ),
     
     tabPanel('Outlays',
@@ -57,7 +58,8 @@ shinyUI(fluidPage(
     plotOutput('ploto'),
     checkboxInput('adjust', 
                   'Adjust below prices for inflation', value = FALSE),
-    plotOutput('ploto_yrs')
+    plotOutput('ploto_yrs'),
+    textOutput('text2')
     ),
     
     tabPanel('BudgetAuthority',
@@ -85,7 +87,8 @@ shinyUI(fluidPage(
       plotOutput('plotb'),
       checkboxInput('adjust', 
                     'Adjust below prices for inflation', value = FALSE),
-      plotOutput('plotb_yrs')
+      plotOutput('plotb_yrs'),
+      textOutput('text3')
     )
   ) 
 ))
