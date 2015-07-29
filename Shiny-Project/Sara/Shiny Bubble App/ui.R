@@ -1,3 +1,9 @@
+region <- readRDS("Data/region.RDS")
+income <- readRDS("Data/income.RDS")
+gini <- readRDS("Data/gini.RDS")
+grouping <- readRDS("Data/grouping.RDS")
+reginc <- readRDS("Data/regionandincome.RDS")
+
 shinyUI(fluidPage(
   titlePanel("Total Population, Population Growth, GDP per Capita, and Gini Coefficient"),
     sidebarPanel(
