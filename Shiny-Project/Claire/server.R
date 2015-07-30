@@ -11,6 +11,7 @@ library(dplyr)
 library(jsonlite)
 library(Hmisc)
 
+load("county_map.RData")
 
 palette1 <- c("#FFEDA0", "#FED976", "#FEB24C", "#FD8D3C",
             "#FC4E2A", "#E31A1C", "#BD0026", "#800026", "#34000f", "#000000")
