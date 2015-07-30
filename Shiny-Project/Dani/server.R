@@ -15,6 +15,7 @@ shinyServer(function(input, output, session) {
         countTitle = paste("Number of flights from", input$origin_select, "to", input$dest_select)
         
         # make plot
+        par(mfrow = c(2, 1))
         p = ggplot(carrier_count, aes(y = count))
         carrier_count$ordered = reorder(carrier_count$CARRIER_NAME, -carrier_count$count)
         p + geom_bar(aes(x = ordered, fill = ordered), stat = "identity", data = carrier_count) +
@@ -26,6 +27,7 @@ shinyServer(function(input, output, session) {
             theme(axis.text.x = element_text(angle = 45, hjust = 1),
                   text = element_text(size = 16)) +
             theme(legend.position="none")
+        
     })
     
     # show flight delays plot in main panel
@@ -123,6 +125,12 @@ shinyServer(function(input, output, session) {
             theme(axis.text.x = element_text(angle = 45, hjust = 1),
                   text = element_text(size = 16))
 
+    })
+    
+    output$mapPlot = renderPlot({
+        
+        # plot flight map
+        map_plot(input$origin_select, input$dest_select)
     })
       
 })
