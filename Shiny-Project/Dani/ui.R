@@ -1,15 +1,16 @@
 shinyUI(pageWithSidebar(
     headerPanel('Airline Comparison Tool'),
     
+    # make sidebar with user inputs
     sidebarPanel(
         selectInput('origin_select', 
                     label = 'Origin', 
-                    choices = origin, 
+                    choices = origin$CITY_NAME, 
                     selected = 'New York, NY'),
         
         selectInput('dest_select', 
                     label = 'Destination',
-                    choices = dest,
+                    choices = dest$CITY_NAME,
                     selected = 'San Francisco, CA'),
         
         dateRangeInput('dateRange',
@@ -29,6 +30,7 @@ shinyUI(pageWithSidebar(
         
     ),
     
+    # output plots to main panel with tabs to select type
     mainPanel(
         tabsetPanel(type = 'tabs',
                     tabPanel('Flights', plotOutput('countPlot')),
@@ -37,6 +39,7 @@ shinyUI(pageWithSidebar(
                     tabPanel('Cancellations', plotOutput('cancelPlot'))
         ),
         
+        # show flight path in main panel
         plotOutput('mapPlot')
     )
 ))
