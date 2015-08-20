@@ -8,6 +8,7 @@ library(dplyr)
 library(googleVis)
 library(shiny)
 
+
 shinyServer(
   function(input, output) {
     
@@ -44,10 +45,11 @@ shinyServer(
       output$table <- renderDataTable({
         dat <- data()
         res <- brushedPoints(dat, input$plot_brush)
-        datatable(res, colnames = c("Region", "Year", 
-                                    "Average GDP per Capita (Current $US)", 
-                                    "Average Population Growth (%)", 
-                                    "Total Population"))
+        colnames(res) = c("Region", "Year", 
+                          "Average GDP per Capita (Current $US)", 
+                          "Average Population Growth (%)", 
+                          "Total Population")
+        return(res)
       })
 
       ggplot(data(), aes_string(x = "year", y = y_var,
@@ -100,10 +102,11 @@ shinyServer(
       output$table2 <- renderDataTable({
         dat2 <- data2()
         res2 <- brushedPoints(dat2, input$plot_brush2)
-        datatable(res2, colnames = c("Income Group", "Year", 
-                                     "Average GDP per Capita (Current $US)", 
-                                     "Average Population Growth (%)", 
-                                     "Total Population"))
+        colnames(res2) = c("Income Group", "Year", 
+                            "Average GDP per Capita (Current $US)", 
+                            "Average Population Growth (%)", 
+                            "Total Population")
+        return(res2)
       })
       
       ggplot(data2(), aes_string(x = "year", y = y_var2,
@@ -163,12 +166,13 @@ shinyServer(
       output$table3 <- renderDataTable({
         dat3 <- data3()
         res3 <- brushedPoints(dat3, input$plot_brush3)
-        datatable(res3, colnames = c("Country", "Region",
-                                     "Income Group", "Year",
-                                     "GDP per Capita (Current $US)", 
-                                     "Population Growth (%)", 
-                                     "Total Population",
-                                     "Gini Coefficient"))
+        colnames(res3) = c("Country", "Region",
+                            "Income Group", "Year",
+                            "GDP per Capita (Current $US)", 
+                            "Population Growth (%)", 
+                            "Total Population",
+                            "Gini Coefficient")
+        return(res3)
       })
       
       ggplot(data3(), aes_string(x = "year", y = y_var3,
