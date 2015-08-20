@@ -7,7 +7,6 @@ library(ggplot2)
 library(dplyr)
 library(googleVis)
 library(shiny)
-library(DT)
 
 shinyServer(
   function(input, output) {
