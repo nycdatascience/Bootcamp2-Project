@@ -110,7 +110,7 @@ graph_real_time<-function(file,subwayline,realTimeDirection){
   ##############################
   
   ## modified script for nyc data science server
-  fileData <- system("sudo python mtaRealTime.py", intern=TRUE)
+  fileData <- system("sudo /usr/bin/python mtaRealTime.py", intern=TRUE)
   tester <- sapply(fileData,function (x) {strsplit(x,split = ",")} )
   filetxt <- as.data.frame(matrix(ncol = 10))
   for(i in 1:length(tester)) {
