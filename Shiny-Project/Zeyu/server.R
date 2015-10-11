@@ -1,6 +1,7 @@
 library(shiny)
 library(leaflet)
 library(dplyr)
+library(DT)
 library(ggplot2)
 library(googleVis)
 
@@ -142,17 +143,25 @@ shinyServer(function(input, output, session) {
                 direction = "backward"))
   })
 
-  output$summary <- renderPrint({
-    df1 <- result[, c('Breakfast', 'Beds', 'Internet', 'TV', 'Shampoo', 'Smoke.Detector', 'Price')]
-    full <- lm(Price ~ ., data = df1)
+#   output$summary <- renderPrint({
+#     df1 <- result[, c('Breakfast', 'Beds', 'Internet', 'TV', 'Shampoo', 'Smoke.Detector', 'Price')]
+#     full <- lm(Price ~ ., data = df1)
+#     
+#     if (input$model1){
+#       return (summary(full))
+#     } 
+#   })
+#   
+#   output$summary1 <- renderPrint({    
+#     action()
+#   })
+
+
+  output$apartmenttable <- DT::renderDataTable({
+    df <- apartment
+    action <- DT::dataTableAjax(session, df)
     
-    if (input$model1){
-      return (summary(full))
-    } 
-  })
-  
-  output$summary1 <- renderPrint({    
-    action()
+    DT::datatable(df, options = list(ajax = list(url = action)), escape = FALSE)
   })
 
 })

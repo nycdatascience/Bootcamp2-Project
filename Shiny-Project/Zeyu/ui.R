@@ -36,7 +36,7 @@ shinyUI(navbarPage('Airbnb Pricing Analysis', id='nav', theme = 'bootstrap.css',
                         h2("Price Explorer"),
                         
                         sliderInput('price', 'Price Range', min(result$Price), max(result$Price), 
-                                    value = range(result$Price), step = 1
+                                    value = range(result$Price), step = 2
                         ),
                         
                         selectInput("bedtype", "Bed Type", vars, selected = 'All Types'),
@@ -61,7 +61,7 @@ shinyUI(navbarPage('Airbnb Pricing Analysis', id='nav', theme = 'bootstrap.css',
                           
           )
       )
-    ),
+    ), ### End of the first tab panel.
     
     tabPanel('Data Explorer',
       fluidRow(
@@ -78,24 +78,26 @@ shinyUI(navbarPage('Airbnb Pricing Analysis', id='nav', theme = 'bootstrap.css',
           plotOutput('plot')
         )
       )
-    ),
+    ), ### End of the second tab panel.
     
-    tabPanel('Name Your Own Price',
+    tabPanel('Apartment Explorer',
       fluidRow(
         column(12,
-          checkboxInput('model1', 'First Model:'),
-          p('Price ~ Number of beds + TV + Shampoo + Breakfast + Interent + Smoke.Detector')
-
-        ),
-        column(12,
-          verbatimTextOutput('summary'),
-          verbatimTextOutput('summary1'),
-          actionButton('backward', 'Backward Stepwise')
-        )
+               DT::dataTableOutput("apartmenttable")
+#           checkboxInput('model1', 'First Model:'),
+#           p('Price ~ Number of beds + TV + Shampoo + Breakfast + Interent + Smoke.Detector')
+# 
+#         ),
+#         column(12,
+#           verbatimTextOutput('summary'),
+#           verbatimTextOutput('summary1'),
+#           actionButton('backward', 'Backward Stepwise')
+#         )
       )
-                 
-    )
+      )           
+    ) ### End of the third tab panel.
     
     
-))
+) ### End of the navbarpage.
+)
 
